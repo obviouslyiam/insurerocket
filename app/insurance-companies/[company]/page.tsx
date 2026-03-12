@@ -30,8 +30,9 @@ export function generateStaticParams() {
   return companies.map((co) => ({ company: co.slug }));
 }
 
-export function generateMetadata({ params }: { params: { company: string } }): Metadata {
-  const company = companies.find((c) => c.slug === params.company) as CompanyData | undefined;
+export async function generateMetadata({ params }: { params: Promise<{ company: string }> }): Promise<Metadata> {
+  const { company: companySlug } = await params;
+  const company = companies.find((c) => c.slug === companySlug) as CompanyData | undefined;
   if (!company) return {};
   return {
     title: `${company.name} Medicare Review - Plans, Ratings & Coverage (2026)`,
@@ -52,8 +53,9 @@ function StarRating({ rating }: { rating: number }) {
   );
 }
 
-export default function InsuranceCompanyPage({ params }: { params: { company: string } }) {
-  const company = companies.find((c) => c.slug === params.company) as CompanyData | undefined;
+export default async function InsuranceCompanyPage({ params }: { params: Promise<{ company: string }> }) {
+  const { company: companySlug } = await params;
+  const company = companies.find((c) => c.slug === companySlug) as CompanyData | undefined;
   if (!company) notFound();
 
   const faqs = [

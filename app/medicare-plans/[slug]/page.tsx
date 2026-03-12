@@ -24,8 +24,9 @@ export function generateStaticParams() {
   return cities.map((city) => ({ slug: city.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const city = cities.find((c) => c.slug === params.slug) as CityData | undefined;
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const city = cities.find((c) => c.slug === slug) as CityData | undefined;
   if (!city) return {};
   return {
     title: `Medicare Plans in ${city.city}, ${city.stateAbbr} - Compare MA & Supplement Plans (2026)`,
@@ -33,8 +34,9 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function CityMedicarePage({ params }: { params: { slug: string } }) {
-  const city = cities.find((c) => c.slug === params.slug) as CityData | undefined;
+export default async function CityMedicarePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const city = cities.find((c) => c.slug === slug) as CityData | undefined;
   if (!city) notFound();
 
   const otherCitiesInState = cities.filter((c) => c.stateSlug === city.stateSlug && c.slug !== city.slug);

@@ -23,8 +23,9 @@ export function generateStaticParams() {
   return states.map((state) => ({ state: state.slug }));
 }
 
-export function generateMetadata({ params }: { params: { state: string } }): Metadata {
-  const state = states.find((s) => s.slug === params.state) as StateData | undefined;
+export async function generateMetadata({ params }: { params: Promise<{ state: string }> }): Promise<Metadata> {
+  const { state: stateSlug } = await params;
+  const state = states.find((s) => s.slug === stateSlug) as StateData | undefined;
   if (!state) return {};
   return {
     title: `Medicare Advantage Plans in ${state.name} (${state.abbr}) - 2026 Guide`,
@@ -38,8 +39,9 @@ function formatNumber(n: number): string {
   return n.toString();
 }
 
-export default function MedicareAdvantageStatePage({ params }: { params: { state: string } }) {
-  const state = states.find((s) => s.slug === params.state) as StateData | undefined;
+export default async function MedicareAdvantageStatePage({ params }: { params: Promise<{ state: string }> }) {
+  const { state: stateSlug } = await params;
+  const state = states.find((s) => s.slug === stateSlug) as StateData | undefined;
   if (!state) notFound();
 
   const stateCities = cities.filter((c) => c.stateSlug === state.slug);
