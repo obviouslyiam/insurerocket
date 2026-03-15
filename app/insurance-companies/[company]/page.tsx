@@ -7,6 +7,30 @@ import FAQSchema from '../../components/FAQSchema';
 import FAQSection from '../../components/FAQSection';
 import companies from '../../../data/insurance-companies.json';
 
+// Official carrier Medicare pages — linked in reviews for authority and trust signals
+const carrierOfficialLinks: Record<string, { label: string; href: string }> = {
+  aetna: { label: 'Aetna Medicare — Official Plan Information', href: 'https://www.aetnamedicare.com' },
+  'anthem-blue-cross': { label: 'Anthem Medicare — Official Plans & Enrollment', href: 'https://www.anthem.com/medicare/' },
+  'blue-cross-blue-shield': { label: 'BCBS Medicare — Find Your Local Plan', href: 'https://www.bcbs.com/medicare' },
+  cigna: { label: 'Cigna Medicare — Plans & Coverage Options', href: 'https://www.cigna.com/medicare/' },
+  humana: { label: 'Humana Medicare — Official Plan Details', href: 'https://www.humana.com/medicare/' },
+  unitedhealthcare: { label: 'UnitedHealthcare Medicare — Plans & Enrollment', href: 'https://www.uhc.com/medicare' },
+  'kaiser-permanente': { label: 'Kaiser Permanente Medicare — Senior Advantage', href: 'https://healthy.kaiserpermanente.org/medicare' },
+  molina: { label: 'Molina Medicare — Plans & Benefits', href: 'https://www.molinahealthcare.com/medicare/' },
+  centene: { label: 'WellCare Medicare (Centene) — Plan Information', href: 'https://www.wellcare.com/medicare' },
+  wellcare: { label: 'WellCare Medicare — Plans & Coverage', href: 'https://www.wellcare.com/medicare' },
+  'mutual-of-omaha': { label: 'Mutual of Omaha — Medicare Supplement Plans', href: 'https://www.mutualofomaha.com/medicare-supplement-insurance/' },
+  'aarp-unitedhealthcare': { label: 'AARP Medicare Plans — Official Information', href: 'https://www.aarp.org/health/medicare-insurance/' },
+  silverscript: { label: 'SilverScript — CVS Part D Plans', href: 'https://www.silverscript.com' },
+  'devoted-health': { label: 'Devoted Health — Medicare Advantage Plans', href: 'https://www.devoted.com' },
+  'clover-health': { label: 'Clover Health — Medicare Advantage', href: 'https://www.cloverhealth.com' },
+  'oscar-health': { label: 'Oscar Health — Medicare Plans', href: 'https://www.hioscar.com/medicare' },
+  'bright-health': { label: 'Bright Health — Medicare Coverage', href: 'https://www.brighthealthplan.com/medicare' },
+  'alignment-healthcare': { label: 'Alignment Health Plan — Medicare Advantage', href: 'https://www.alignmenthealth.com' },
+  'scan-health': { label: 'SCAN Health Plan — Medicare Advantage', href: 'https://www.scanhealthplan.com' },
+  agewell: { label: 'AgeWell — Medicare Plans', href: 'https://www.agewellnewyork.com' },
+};
+
 interface CompanyData {
   slug: string;
   name: string;
@@ -133,6 +157,59 @@ export default async function InsuranceCompanyPage({ params }: { params: Promise
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-foreground mb-4">Coverage Areas</h2>
           <p className="text-muted">{company.coverageAreas}</p>
+        </section>
+
+        {/* Official resources */}
+        <section className="mb-10 bg-blue-50 border border-blue-200 rounded-lg p-6">
+          <h2 className="text-base font-semibold text-blue-900 mb-4">Official Resources</h2>
+          <ul className="space-y-3">
+            {carrierOfficialLinks[company.slug] && (
+              <li>
+                <a
+                  href={carrierOfficialLinks[company.slug].href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-blue-700 hover:text-blue-900 hover:underline"
+                >
+                  {carrierOfficialLinks[company.slug].label}
+                </a>
+                <span className="text-xs text-blue-600 ml-2">— Official carrier site</span>
+              </li>
+            )}
+            <li>
+              <a
+                href="https://www.medicare.gov/plan-compare/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-blue-700 hover:text-blue-900 hover:underline"
+              >
+                Medicare.gov — Plan Finder Tool
+              </a>
+              <span className="text-xs text-blue-600 ml-2">— Compare {company.shortName} plans in your zip code</span>
+            </li>
+            <li>
+              <a
+                href="https://www.cms.gov/medicare/health-drug-plans/medicareadvtgspecneeds/downloads/2026-star-ratings"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-blue-700 hover:text-blue-900 hover:underline"
+              >
+                CMS.gov — 2026 Medicare Star Ratings
+              </a>
+              <span className="text-xs text-blue-600 ml-2">— Verify {company.shortName}&apos;s contract-level ratings</span>
+            </li>
+            <li>
+              <a
+                href="https://www.shiphelp.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-blue-700 hover:text-blue-900 hover:underline"
+              >
+                SHIP — Free Medicare Counseling
+              </a>
+              <span className="text-xs text-blue-600 ml-2">— Unbiased help comparing {company.shortName} to local alternatives</span>
+            </li>
+          </ul>
         </section>
 
         {/* Pros and cons */}

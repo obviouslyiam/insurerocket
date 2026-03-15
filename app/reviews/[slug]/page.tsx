@@ -7,6 +7,40 @@ import FAQSchema from '../../components/FAQSchema';
 import FAQSection from '../../components/FAQSection';
 import reviews from '../../../data/carrier-reviews.json';
 
+// Authority + carrier links per review slug
+const reviewAuthorityLinks: Record<string, { label: string; href: string; note: string }[]> = {
+  'unitedhealthcare-medicare-review-2026': [
+    { label: 'UnitedHealthcare Medicare — Official Plans & Enrollment', href: 'https://www.uhc.com/medicare', note: 'Official UHC Medicare site' },
+    { label: 'Medicare.gov — Compare UHC Plans in Your Zip Code', href: 'https://www.medicare.gov/plan-compare/', note: 'Official federal plan comparison tool' },
+    { label: 'CMS.gov — 2026 Star Ratings by Contract', href: 'https://www.cms.gov/medicare/health-drug-plans/medicareadvtgspecneeds/downloads/2026-star-ratings', note: 'Verify UHC contract-level ratings' },
+    { label: 'SHIP — Free Counseling Before You Enroll', href: 'https://www.shiphelp.org', note: 'Unbiased help in every state' },
+    { label: 'ConsumerFinance.gov — How to File an Insurance Complaint', href: 'https://www.consumerfinance.gov/consumer-tools/insurance/', note: 'If you experience issues with a plan' },
+  ],
+  'humana-medicare-review-2026': [
+    { label: 'Humana Medicare — Official Plans & Benefits', href: 'https://www.humana.com/medicare/', note: 'Official Humana Medicare site' },
+    { label: 'Medicare.gov — Find Humana Plans Near You', href: 'https://www.medicare.gov/plan-compare/', note: 'Filter by zip code to see local Humana options' },
+    { label: 'CMS.gov — 2026 Star Ratings (Check Humana Contracts)', href: 'https://www.cms.gov/medicare/health-drug-plans/medicareadvtgspecneeds/downloads/2026-star-ratings', note: 'H5216 and other contract ratings' },
+    { label: 'SHIP — Free Local Medicare Counseling', href: 'https://www.shiphelp.org', note: 'No-cost help comparing Humana to local alternatives' },
+  ],
+  'aetna-medicare-review-2026': [
+    { label: 'Aetna Medicare — Official Plan Information', href: 'https://www.aetnamedicare.com', note: 'Official Aetna Medicare site' },
+    { label: 'Medicare.gov — Compare Aetna Plans in Your Area', href: 'https://www.medicare.gov/plan-compare/', note: 'Enter your zip code to see local plan options' },
+    { label: 'CMS.gov — 2026 Medicare Advantage Star Ratings', href: 'https://www.cms.gov/medicare/health-drug-plans/medicareadvtgspecneeds/downloads/2026-star-ratings', note: 'Aetna contract-level quality ratings' },
+    { label: 'ConsumerFinance.gov — Insurance Complaints & Resources', href: 'https://www.consumerfinance.gov/consumer-tools/insurance/', note: 'How to escalate coverage disputes' },
+  ],
+  'kaiser-permanente-medicare-review-2026': [
+    { label: 'Kaiser Permanente Medicare — Senior Advantage Plans', href: 'https://healthy.kaiserpermanente.org/medicare', note: 'Official Kaiser Medicare site' },
+    { label: 'Medicare.gov — Verify Kaiser Availability in Your Area', href: 'https://www.medicare.gov/plan-compare/', note: 'Kaiser is only available in 8 states + DC' },
+    { label: 'CMS.gov — Kaiser Star Ratings (Consistently 4.5–5 Stars)', href: 'https://www.cms.gov/medicare/health-drug-plans/medicareadvtgspecneeds/downloads/2026-star-ratings', note: 'Kaiser routinely earns the highest ratings in the program' },
+  ],
+  'bcbs-medicare-plans-2026-state-guide': [
+    { label: 'BCBS.com — Find Your Local Blue Cross Blue Shield Plan', href: 'https://www.bcbs.com/medicare', note: 'Each state has its own BCBS company' },
+    { label: 'Medicare.gov — Compare BCBS Plans by State', href: 'https://www.medicare.gov/plan-compare/', note: 'Official comparison tool — enter your zip code' },
+    { label: 'CMS.gov — BCBS Contract Star Ratings by State', href: 'https://www.cms.gov/medicare/health-drug-plans/medicareadvtgspecneeds/downloads/2026-star-ratings', note: 'BCBS quality varies significantly by local plan' },
+    { label: 'SHIP — State-by-State Medicare Counseling', href: 'https://www.shiphelp.org', note: 'Especially useful given BCBS quality variation by market' },
+  ],
+};
+
 interface ReviewSection {
   heading: string;
   content: string;
@@ -154,6 +188,28 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
         <div id="faq">
           <FAQSection faqs={review.faqs} />
         </div>
+
+        {/* Authority links */}
+        {reviewAuthorityLinks[review.slug] && (
+          <section className="mt-10 bg-blue-50 border border-blue-200 rounded-lg p-6">
+            <h2 className="text-base font-semibold text-blue-900 mb-4">Official Resources & Verification Links</h2>
+            <ul className="space-y-3">
+              {reviewAuthorityLinks[review.slug].map((link, i) => (
+                <li key={i} className="flex flex-col sm:flex-row sm:items-start gap-1">
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-medium text-blue-700 hover:text-blue-900 hover:underline shrink-0"
+                  >
+                    {link.label}
+                  </a>
+                  <span className="text-xs text-blue-600 sm:ml-2 sm:mt-0.5">— {link.note}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         {/* Other reviews */}
         {otherReviews.length > 0 && (

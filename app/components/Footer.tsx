@@ -62,6 +62,45 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Partner sites + official links */}
+        <div className="mt-10 pt-8 border-t border-white/10 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider mb-4 text-white/80">Official Medicare Resources</h3>
+            <ul className="space-y-2">
+              <li>
+                <a href="https://www.medicare.gov" target="_blank" rel="noopener noreferrer" className="text-sm text-white/60 hover:text-white transition-colors">
+                  Medicare.gov — Official Plan Finder &amp; Enrollment
+                </a>
+              </li>
+              <li>
+                <a href="https://www.cms.gov/medicare/health-drug-plans/medicareadvtgspecneeds/downloads/2026-star-ratings" target="_blank" rel="noopener noreferrer" className="text-sm text-white/60 hover:text-white transition-colors">
+                  CMS.gov — 2026 Star Ratings
+                </a>
+              </li>
+              <li>
+                <a href="https://www.ssa.gov/medicare/" target="_blank" rel="noopener noreferrer" className="text-sm text-white/60 hover:text-white transition-colors">
+                  SSA.gov — Medicare Enrollment via Social Security
+                </a>
+              </li>
+              <li>
+                <a href="https://www.shiphelp.org" target="_blank" rel="noopener noreferrer" className="text-sm text-white/60 hover:text-white transition-colors">
+                  SHIP — Free Medicare Counseling in Your State
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider mb-4 text-white/80">More Resources</h3>
+            <ul className="space-y-2">
+              <li>
+                <a href="https://www.bankingdeal.com" target="_blank" rel="noopener noreferrer" className="text-sm text-white/60 hover:text-white transition-colors">
+                  BankingDeal.com — Compare Savings Accounts &amp; CDs for Retirement
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         {/* Disclaimers */}
         <div className="mt-12 pt-8 border-t border-white/10">
           <div className="space-y-3 text-xs text-white/40">
