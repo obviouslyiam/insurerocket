@@ -1,42 +1,4510 @@
 [
-  { "slug": "new-york-ny", "city": "New York", "state": "New York", "stateAbbr": "NY", "stateSlug": "new-york", "population": "8.3M", "tier": "major", "topCarriers": ["UnitedHealthcare", "Humana", "Aetna", "Fidelis Care", "Anthem"], "maPlansAvailable": 85, "avgPremium": 0 },
-  { "slug": "los-angeles-ca", "city": "Los Angeles", "state": "California", "stateAbbr": "CA", "stateSlug": "california", "population": "3.9M", "tier": "major", "topCarriers": ["Kaiser Permanente", "UnitedHealthcare", "SCAN Health", "Alignment Healthcare", "Humana"], "maPlansAvailable": 92, "avgPremium": 0 },
-  { "slug": "chicago-il", "city": "Chicago", "state": "Illinois", "stateAbbr": "IL", "stateSlug": "illinois", "population": "2.7M", "tier": "major", "topCarriers": ["UnitedHealthcare", "Humana", "Aetna", "Blue Cross Blue Shield of IL"], "maPlansAvailable": 72, "avgPremium": 0 },
-  { "slug": "houston-tx", "city": "Houston", "state": "Texas", "stateAbbr": "TX", "stateSlug": "texas", "population": "2.3M", "tier": "major", "topCarriers": ["UnitedHealthcare", "Humana", "Aetna", "WellCare", "Cigna"], "maPlansAvailable": 78, "avgPremium": 0 },
-  { "slug": "phoenix-az", "city": "Phoenix", "state": "Arizona", "stateAbbr": "AZ", "stateSlug": "arizona", "population": "1.6M", "tier": "major", "topCarriers": ["UnitedHealthcare", "Humana", "Banner Health", "Cigna", "Aetna"], "maPlansAvailable": 65, "avgPremium": 0 },
-  { "slug": "philadelphia-pa", "city": "Philadelphia", "state": "Pennsylvania", "stateAbbr": "PA", "stateSlug": "pennsylvania", "population": "1.6M", "tier": "major", "topCarriers": ["UnitedHealthcare", "Humana", "Aetna", "Independence Blue Cross", "UPMC"], "maPlansAvailable": 70, "avgPremium": 0 },
-  { "slug": "san-antonio-tx", "city": "San Antonio", "state": "Texas", "stateAbbr": "TX", "stateSlug": "texas", "population": "1.5M", "tier": "major", "topCarriers": ["UnitedHealthcare", "Humana", "Aetna", "WellCare", "Superior HealthPlan"], "maPlansAvailable": 58, "avgPremium": 0 },
-  { "slug": "san-diego-ca", "city": "San Diego", "state": "California", "stateAbbr": "CA", "stateSlug": "california", "population": "1.4M", "tier": "major", "topCarriers": ["Kaiser Permanente", "UnitedHealthcare", "SCAN Health", "Humana", "Sharp Health Plan"], "maPlansAvailable": 68, "avgPremium": 0 },
-  { "slug": "dallas-tx", "city": "Dallas", "state": "Texas", "stateAbbr": "TX", "stateSlug": "texas", "population": "1.3M", "tier": "major", "topCarriers": ["UnitedHealthcare", "Humana", "Aetna", "Cigna", "Blue Cross Blue Shield of TX"], "maPlansAvailable": 75, "avgPremium": 0 },
-  { "slug": "san-jose-ca", "city": "San Jose", "state": "California", "stateAbbr": "CA", "stateSlug": "california", "population": "1.0M", "tier": "major", "topCarriers": ["Kaiser Permanente", "UnitedHealthcare", "SCAN Health", "Alignment Healthcare"], "maPlansAvailable": 62, "avgPremium": 0 },
-  { "slug": "austin-tx", "city": "Austin", "state": "Texas", "stateAbbr": "TX", "stateSlug": "texas", "population": "1.0M", "tier": "major", "topCarriers": ["UnitedHealthcare", "Humana", "Aetna", "WellCare", "Scott & White Health Plan"], "maPlansAvailable": 55, "avgPremium": 0 },
-  { "slug": "jacksonville-fl", "city": "Jacksonville", "state": "Florida", "stateAbbr": "FL", "stateSlug": "florida", "population": "950K", "tier": "large", "topCarriers": ["Humana", "UnitedHealthcare", "Aetna", "Florida Blue", "WellCare"], "maPlansAvailable": 60, "avgPremium": 0 },
-  { "slug": "fort-worth-tx", "city": "Fort Worth", "state": "Texas", "stateAbbr": "TX", "stateSlug": "texas", "population": "935K", "tier": "large", "topCarriers": ["UnitedHealthcare", "Humana", "Aetna", "Cigna", "Blue Cross Blue Shield of TX"], "maPlansAvailable": 72, "avgPremium": 0 },
-  { "slug": "columbus-oh", "city": "Columbus", "state": "Ohio", "stateAbbr": "OH", "stateSlug": "ohio", "population": "905K", "tier": "large", "topCarriers": ["UnitedHealthcare", "Humana", "Anthem Blue Cross", "Aetna", "Medical Mutual"], "maPlansAvailable": 55, "avgPremium": 0 },
-  { "slug": "charlotte-nc", "city": "Charlotte", "state": "North Carolina", "stateAbbr": "NC", "stateSlug": "north-carolina", "population": "874K", "tier": "large", "topCarriers": ["UnitedHealthcare", "Humana", "Aetna", "Blue Cross Blue Shield of NC"], "maPlansAvailable": 52, "avgPremium": 0 },
-  { "slug": "san-francisco-ca", "city": "San Francisco", "state": "California", "stateAbbr": "CA", "stateSlug": "california", "population": "870K", "tier": "large", "topCarriers": ["Kaiser Permanente", "UnitedHealthcare", "SCAN Health", "Humana", "Blue Shield of CA"], "maPlansAvailable": 58, "avgPremium": 0 },
-  { "slug": "indianapolis-in", "city": "Indianapolis", "state": "Indiana", "stateAbbr": "IN", "stateSlug": "indiana", "population": "876K", "tier": "large", "topCarriers": ["UnitedHealthcare", "Humana", "Anthem Blue Cross", "Aetna", "CareSource"], "maPlansAvailable": 50, "avgPremium": 0 },
-  { "slug": "seattle-wa", "city": "Seattle", "state": "Washington", "stateAbbr": "WA", "stateSlug": "washington", "population": "733K", "tier": "large", "topCarriers": ["UnitedHealthcare", "Kaiser Permanente", "Humana", "Premera Blue Cross", "Regence"], "maPlansAvailable": 48, "avgPremium": 0 },
-  { "slug": "denver-co", "city": "Denver", "state": "Colorado", "stateAbbr": "CO", "stateSlug": "colorado", "population": "713K", "tier": "large", "topCarriers": ["UnitedHealthcare", "Kaiser Permanente", "Humana", "Anthem Blue Cross"], "maPlansAvailable": 52, "avgPremium": 0 },
-  { "slug": "nashville-tn", "city": "Nashville", "state": "Tennessee", "stateAbbr": "TN", "stateSlug": "tennessee", "population": "689K", "tier": "large", "topCarriers": ["UnitedHealthcare", "Humana", "Cigna", "Blue Cross Blue Shield of TN"], "maPlansAvailable": 48, "avgPremium": 0 },
-  { "slug": "oklahoma-city-ok", "city": "Oklahoma City", "state": "Oklahoma", "stateAbbr": "OK", "stateSlug": "oklahoma", "population": "681K", "tier": "large", "topCarriers": ["UnitedHealthcare", "Humana", "Blue Cross Blue Shield of OK", "Aetna"], "maPlansAvailable": 42, "avgPremium": 0 },
-  { "slug": "el-paso-tx", "city": "El Paso", "state": "Texas", "stateAbbr": "TX", "stateSlug": "texas", "population": "678K", "tier": "large", "topCarriers": ["UnitedHealthcare", "Humana", "Aetna", "Blue Cross Blue Shield of TX"], "maPlansAvailable": 45, "avgPremium": 0 },
-  { "slug": "boston-ma", "city": "Boston", "state": "Massachusetts", "stateAbbr": "MA", "stateSlug": "massachusetts", "population": "675K", "tier": "large", "topCarriers": ["UnitedHealthcare", "Tufts Health Plan", "Blue Cross Blue Shield of MA", "Humana"], "maPlansAvailable": 55, "avgPremium": 0 },
-  { "slug": "portland-or", "city": "Portland", "state": "Oregon", "stateAbbr": "OR", "stateSlug": "oregon", "population": "652K", "tier": "large", "topCarriers": ["Kaiser Permanente", "UnitedHealthcare", "Humana", "Regence Blue Cross", "Providence"], "maPlansAvailable": 45, "avgPremium": 0 },
-  { "slug": "las-vegas-nv", "city": "Las Vegas", "state": "Nevada", "stateAbbr": "NV", "stateSlug": "nevada", "population": "641K", "tier": "large", "topCarriers": ["UnitedHealthcare", "Humana", "Anthem Blue Cross", "Aetna", "Prominence Health"], "maPlansAvailable": 52, "avgPremium": 0 },
-  { "slug": "memphis-tn", "city": "Memphis", "state": "Tennessee", "stateAbbr": "TN", "stateSlug": "tennessee", "population": "633K", "tier": "large", "topCarriers": ["UnitedHealthcare", "Humana", "Cigna", "Blue Cross Blue Shield of TN"], "maPlansAvailable": 42, "avgPremium": 0 },
-  { "slug": "louisville-ky", "city": "Louisville", "state": "Kentucky", "stateAbbr": "KY", "stateSlug": "kentucky", "population": "628K", "tier": "large", "topCarriers": ["UnitedHealthcare", "Humana", "Anthem Blue Cross", "Aetna"], "maPlansAvailable": 45, "avgPremium": 0 },
-  { "slug": "baltimore-md", "city": "Baltimore", "state": "Maryland", "stateAbbr": "MD", "stateSlug": "maryland", "population": "576K", "tier": "large", "topCarriers": ["UnitedHealthcare", "CareFirst Blue Cross", "Humana", "Aetna"], "maPlansAvailable": 48, "avgPremium": 0 },
-  { "slug": "milwaukee-wi", "city": "Milwaukee", "state": "Wisconsin", "stateAbbr": "WI", "stateSlug": "wisconsin", "population": "569K", "tier": "large", "topCarriers": ["UnitedHealthcare", "Humana", "WPS Health Solutions", "Network Health"], "maPlansAvailable": 42, "avgPremium": 0 },
-  { "slug": "albuquerque-nm", "city": "Albuquerque", "state": "New Mexico", "stateAbbr": "NM", "stateSlug": "new-mexico", "population": "560K", "tier": "mid", "topCarriers": ["UnitedHealthcare", "Humana", "Blue Cross Blue Shield of NM", "Presbyterian"], "maPlansAvailable": 38, "avgPremium": 0 },
-  { "slug": "tucson-az", "city": "Tucson", "state": "Arizona", "stateAbbr": "AZ", "stateSlug": "arizona", "population": "542K", "tier": "mid", "topCarriers": ["UnitedHealthcare", "Humana", "Banner Health", "Aetna"], "maPlansAvailable": 42, "avgPremium": 0 },
-  { "slug": "fresno-ca", "city": "Fresno", "state": "California", "stateAbbr": "CA", "stateSlug": "california", "population": "539K", "tier": "mid", "topCarriers": ["Kaiser Permanente", "UnitedHealthcare", "Humana", "Anthem Blue Cross"], "maPlansAvailable": 45, "avgPremium": 0 },
-  { "slug": "mesa-az", "city": "Mesa", "state": "Arizona", "stateAbbr": "AZ", "stateSlug": "arizona", "population": "504K", "tier": "mid", "topCarriers": ["UnitedHealthcare", "Humana", "Banner Health", "Cigna", "Aetna"], "maPlansAvailable": 60, "avgPremium": 0 },
-  { "slug": "sacramento-ca", "city": "Sacramento", "state": "California", "stateAbbr": "CA", "stateSlug": "california", "population": "524K", "tier": "mid", "topCarriers": ["Kaiser Permanente", "UnitedHealthcare", "Humana", "Anthem Blue Cross", "SCAN Health"], "maPlansAvailable": 55, "avgPremium": 0 },
-  { "slug": "atlanta-ga", "city": "Atlanta", "state": "Georgia", "stateAbbr": "GA", "stateSlug": "georgia", "population": "499K", "tier": "mid", "topCarriers": ["UnitedHealthcare", "Humana", "Aetna", "Anthem Blue Cross", "WellCare"], "maPlansAvailable": 58, "avgPremium": 0 },
-  { "slug": "kansas-city-mo", "city": "Kansas City", "state": "Missouri", "stateAbbr": "MO", "stateSlug": "missouri", "population": "508K", "tier": "mid", "topCarriers": ["UnitedHealthcare", "Humana", "Aetna", "Blue KC"], "maPlansAvailable": 42, "avgPremium": 0 },
-  { "slug": "omaha-ne", "city": "Omaha", "state": "Nebraska", "stateAbbr": "NE", "stateSlug": "nebraska", "population": "486K", "tier": "mid", "topCarriers": ["UnitedHealthcare", "Humana", "Mutual of Omaha", "Blue Cross Blue Shield of NE"], "maPlansAvailable": 38, "avgPremium": 0 },
-  { "slug": "miami-fl", "city": "Miami", "state": "Florida", "stateAbbr": "FL", "stateSlug": "florida", "population": "442K", "tier": "mid", "topCarriers": ["Humana", "UnitedHealthcare", "Aetna", "Devoted Health", "WellCare", "Simply Healthcare"], "maPlansAvailable": 88, "avgPremium": 0 },
-  { "slug": "tampa-fl", "city": "Tampa", "state": "Florida", "stateAbbr": "FL", "stateSlug": "florida", "population": "384K", "tier": "mid", "topCarriers": ["Humana", "UnitedHealthcare", "Aetna", "WellCare", "Devoted Health", "Florida Blue"], "maPlansAvailable": 72, "avgPremium": 0 },
-  { "slug": "orlando-fl", "city": "Orlando", "state": "Florida", "stateAbbr": "FL", "stateSlug": "florida", "population": "307K", "tier": "mid", "topCarriers": ["Humana", "UnitedHealthcare", "Aetna", "Devoted Health", "WellCare", "Florida Blue"], "maPlansAvailable": 68, "avgPremium": 0 }
+  {
+    "slug": "new-york-ny",
+    "city": "New York",
+    "state": "New York",
+    "stateAbbr": "NY",
+    "stateSlug": "new-york",
+    "population": "8.3M",
+    "tier": "major",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Fidelis Care",
+      "Anthem"
+    ],
+    "maPlansAvailable": 85,
+    "avgPremium": 0
+  },
+  {
+    "slug": "los-angeles-ca",
+    "city": "Los Angeles",
+    "state": "California",
+    "stateAbbr": "CA",
+    "stateSlug": "california",
+    "population": "3.9M",
+    "tier": "major",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "SCAN Health",
+      "Alignment Healthcare",
+      "Humana"
+    ],
+    "maPlansAvailable": 92,
+    "avgPremium": 0
+  },
+  {
+    "slug": "chicago-il",
+    "city": "Chicago",
+    "state": "Illinois",
+    "stateAbbr": "IL",
+    "stateSlug": "illinois",
+    "population": "2.7M",
+    "tier": "major",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of IL"
+    ],
+    "maPlansAvailable": 72,
+    "avgPremium": 0
+  },
+  {
+    "slug": "houston-tx",
+    "city": "Houston",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "stateSlug": "texas",
+    "population": "2.3M",
+    "tier": "major",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "WellCare",
+      "Cigna"
+    ],
+    "maPlansAvailable": 78,
+    "avgPremium": 0
+  },
+  {
+    "slug": "phoenix-az",
+    "city": "Phoenix",
+    "state": "Arizona",
+    "stateAbbr": "AZ",
+    "stateSlug": "arizona",
+    "population": "1.6M",
+    "tier": "major",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Banner Health",
+      "Cigna",
+      "Aetna"
+    ],
+    "maPlansAvailable": 65,
+    "avgPremium": 0
+  },
+  {
+    "slug": "philadelphia-pa",
+    "city": "Philadelphia",
+    "state": "Pennsylvania",
+    "stateAbbr": "PA",
+    "stateSlug": "pennsylvania",
+    "population": "1.6M",
+    "tier": "major",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Independence Blue Cross",
+      "UPMC"
+    ],
+    "maPlansAvailable": 70,
+    "avgPremium": 0
+  },
+  {
+    "slug": "san-antonio-tx",
+    "city": "San Antonio",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "stateSlug": "texas",
+    "population": "1.5M",
+    "tier": "major",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "WellCare",
+      "Superior HealthPlan"
+    ],
+    "maPlansAvailable": 58,
+    "avgPremium": 0
+  },
+  {
+    "slug": "san-diego-ca",
+    "city": "San Diego",
+    "state": "California",
+    "stateAbbr": "CA",
+    "stateSlug": "california",
+    "population": "1.4M",
+    "tier": "major",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "SCAN Health",
+      "Humana",
+      "Sharp Health Plan"
+    ],
+    "maPlansAvailable": 68,
+    "avgPremium": 0
+  },
+  {
+    "slug": "dallas-tx",
+    "city": "Dallas",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "stateSlug": "texas",
+    "population": "1.3M",
+    "tier": "major",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Cigna",
+      "Blue Cross Blue Shield of TX"
+    ],
+    "maPlansAvailable": 75,
+    "avgPremium": 0
+  },
+  {
+    "slug": "san-jose-ca",
+    "city": "San Jose",
+    "state": "California",
+    "stateAbbr": "CA",
+    "stateSlug": "california",
+    "population": "1.0M",
+    "tier": "major",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "SCAN Health",
+      "Alignment Healthcare"
+    ],
+    "maPlansAvailable": 62,
+    "avgPremium": 0
+  },
+  {
+    "slug": "austin-tx",
+    "city": "Austin",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "stateSlug": "texas",
+    "population": "1.0M",
+    "tier": "major",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "WellCare",
+      "Scott & White Health Plan"
+    ],
+    "maPlansAvailable": 55,
+    "avgPremium": 0
+  },
+  {
+    "slug": "jacksonville-fl",
+    "city": "Jacksonville",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "stateSlug": "florida",
+    "population": "950K",
+    "tier": "large",
+    "topCarriers": [
+      "Humana",
+      "UnitedHealthcare",
+      "Aetna",
+      "Florida Blue",
+      "WellCare"
+    ],
+    "maPlansAvailable": 60,
+    "avgPremium": 0
+  },
+  {
+    "slug": "fort-worth-tx",
+    "city": "Fort Worth",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "stateSlug": "texas",
+    "population": "935K",
+    "tier": "large",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Cigna",
+      "Blue Cross Blue Shield of TX"
+    ],
+    "maPlansAvailable": 72,
+    "avgPremium": 0
+  },
+  {
+    "slug": "columbus-oh",
+    "city": "Columbus",
+    "state": "Ohio",
+    "stateAbbr": "OH",
+    "stateSlug": "ohio",
+    "population": "905K",
+    "tier": "large",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Aetna",
+      "Medical Mutual"
+    ],
+    "maPlansAvailable": 55,
+    "avgPremium": 0
+  },
+  {
+    "slug": "charlotte-nc",
+    "city": "Charlotte",
+    "state": "North Carolina",
+    "stateAbbr": "NC",
+    "stateSlug": "north-carolina",
+    "population": "874K",
+    "tier": "large",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of NC"
+    ],
+    "maPlansAvailable": 52,
+    "avgPremium": 0
+  },
+  {
+    "slug": "san-francisco-ca",
+    "city": "San Francisco",
+    "state": "California",
+    "stateAbbr": "CA",
+    "stateSlug": "california",
+    "population": "870K",
+    "tier": "large",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "SCAN Health",
+      "Humana",
+      "Blue Shield of CA"
+    ],
+    "maPlansAvailable": 58,
+    "avgPremium": 0
+  },
+  {
+    "slug": "indianapolis-in",
+    "city": "Indianapolis",
+    "state": "Indiana",
+    "stateAbbr": "IN",
+    "stateSlug": "indiana",
+    "population": "876K",
+    "tier": "large",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Aetna",
+      "CareSource"
+    ],
+    "maPlansAvailable": 50,
+    "avgPremium": 0
+  },
+  {
+    "slug": "seattle-wa",
+    "city": "Seattle",
+    "state": "Washington",
+    "stateAbbr": "WA",
+    "stateSlug": "washington",
+    "population": "733K",
+    "tier": "large",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Kaiser Permanente",
+      "Humana",
+      "Premera Blue Cross",
+      "Regence"
+    ],
+    "maPlansAvailable": 48,
+    "avgPremium": 0
+  },
+  {
+    "slug": "denver-co",
+    "city": "Denver",
+    "state": "Colorado",
+    "stateAbbr": "CO",
+    "stateSlug": "colorado",
+    "population": "713K",
+    "tier": "large",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Kaiser Permanente",
+      "Humana",
+      "Anthem Blue Cross"
+    ],
+    "maPlansAvailable": 52,
+    "avgPremium": 0
+  },
+  {
+    "slug": "nashville-tn",
+    "city": "Nashville",
+    "state": "Tennessee",
+    "stateAbbr": "TN",
+    "stateSlug": "tennessee",
+    "population": "689K",
+    "tier": "large",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Cigna",
+      "Blue Cross Blue Shield of TN"
+    ],
+    "maPlansAvailable": 48,
+    "avgPremium": 0
+  },
+  {
+    "slug": "oklahoma-city-ok",
+    "city": "Oklahoma City",
+    "state": "Oklahoma",
+    "stateAbbr": "OK",
+    "stateSlug": "oklahoma",
+    "population": "681K",
+    "tier": "large",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of OK",
+      "Aetna"
+    ],
+    "maPlansAvailable": 42,
+    "avgPremium": 0
+  },
+  {
+    "slug": "el-paso-tx",
+    "city": "El Paso",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "stateSlug": "texas",
+    "population": "678K",
+    "tier": "large",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of TX"
+    ],
+    "maPlansAvailable": 45,
+    "avgPremium": 0
+  },
+  {
+    "slug": "boston-ma",
+    "city": "Boston",
+    "state": "Massachusetts",
+    "stateAbbr": "MA",
+    "stateSlug": "massachusetts",
+    "population": "675K",
+    "tier": "large",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Tufts Health Plan",
+      "Blue Cross Blue Shield of MA",
+      "Humana"
+    ],
+    "maPlansAvailable": 55,
+    "avgPremium": 0
+  },
+  {
+    "slug": "portland-or",
+    "city": "Portland",
+    "state": "Oregon",
+    "stateAbbr": "OR",
+    "stateSlug": "oregon",
+    "population": "652K",
+    "tier": "large",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "Humana",
+      "Regence Blue Cross",
+      "Providence"
+    ],
+    "maPlansAvailable": 45,
+    "avgPremium": 0
+  },
+  {
+    "slug": "las-vegas-nv",
+    "city": "Las Vegas",
+    "state": "Nevada",
+    "stateAbbr": "NV",
+    "stateSlug": "nevada",
+    "population": "641K",
+    "tier": "large",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Aetna",
+      "Prominence Health"
+    ],
+    "maPlansAvailable": 52,
+    "avgPremium": 0
+  },
+  {
+    "slug": "memphis-tn",
+    "city": "Memphis",
+    "state": "Tennessee",
+    "stateAbbr": "TN",
+    "stateSlug": "tennessee",
+    "population": "633K",
+    "tier": "large",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Cigna",
+      "Blue Cross Blue Shield of TN"
+    ],
+    "maPlansAvailable": 42,
+    "avgPremium": 0
+  },
+  {
+    "slug": "louisville-ky",
+    "city": "Louisville",
+    "state": "Kentucky",
+    "stateAbbr": "KY",
+    "stateSlug": "kentucky",
+    "population": "628K",
+    "tier": "large",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Aetna"
+    ],
+    "maPlansAvailable": 45,
+    "avgPremium": 0
+  },
+  {
+    "slug": "baltimore-md",
+    "city": "Baltimore",
+    "state": "Maryland",
+    "stateAbbr": "MD",
+    "stateSlug": "maryland",
+    "population": "576K",
+    "tier": "large",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "CareFirst Blue Cross",
+      "Humana",
+      "Aetna"
+    ],
+    "maPlansAvailable": 48,
+    "avgPremium": 0
+  },
+  {
+    "slug": "milwaukee-wi",
+    "city": "Milwaukee",
+    "state": "Wisconsin",
+    "stateAbbr": "WI",
+    "stateSlug": "wisconsin",
+    "population": "569K",
+    "tier": "large",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "WPS Health Solutions",
+      "Network Health"
+    ],
+    "maPlansAvailable": 42,
+    "avgPremium": 0
+  },
+  {
+    "slug": "albuquerque-nm",
+    "city": "Albuquerque",
+    "state": "New Mexico",
+    "stateAbbr": "NM",
+    "stateSlug": "new-mexico",
+    "population": "560K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of NM",
+      "Presbyterian"
+    ],
+    "maPlansAvailable": 38,
+    "avgPremium": 0
+  },
+  {
+    "slug": "tucson-az",
+    "city": "Tucson",
+    "state": "Arizona",
+    "stateAbbr": "AZ",
+    "stateSlug": "arizona",
+    "population": "542K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Banner Health",
+      "Aetna"
+    ],
+    "maPlansAvailable": 42,
+    "avgPremium": 0
+  },
+  {
+    "slug": "fresno-ca",
+    "city": "Fresno",
+    "state": "California",
+    "stateAbbr": "CA",
+    "stateSlug": "california",
+    "population": "539K",
+    "tier": "mid",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross"
+    ],
+    "maPlansAvailable": 45,
+    "avgPremium": 0
+  },
+  {
+    "slug": "mesa-az",
+    "city": "Mesa",
+    "state": "Arizona",
+    "stateAbbr": "AZ",
+    "stateSlug": "arizona",
+    "population": "504K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Banner Health",
+      "Cigna",
+      "Aetna"
+    ],
+    "maPlansAvailable": 60,
+    "avgPremium": 0
+  },
+  {
+    "slug": "sacramento-ca",
+    "city": "Sacramento",
+    "state": "California",
+    "stateAbbr": "CA",
+    "stateSlug": "california",
+    "population": "524K",
+    "tier": "mid",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "SCAN Health"
+    ],
+    "maPlansAvailable": 55,
+    "avgPremium": 0
+  },
+  {
+    "slug": "atlanta-ga",
+    "city": "Atlanta",
+    "state": "Georgia",
+    "stateAbbr": "GA",
+    "stateSlug": "georgia",
+    "population": "499K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Anthem Blue Cross",
+      "WellCare"
+    ],
+    "maPlansAvailable": 58,
+    "avgPremium": 0
+  },
+  {
+    "slug": "kansas-city-mo",
+    "city": "Kansas City",
+    "state": "Missouri",
+    "stateAbbr": "MO",
+    "stateSlug": "missouri",
+    "population": "508K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue KC"
+    ],
+    "maPlansAvailable": 42,
+    "avgPremium": 0
+  },
+  {
+    "slug": "omaha-ne",
+    "city": "Omaha",
+    "state": "Nebraska",
+    "stateAbbr": "NE",
+    "stateSlug": "nebraska",
+    "population": "486K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Mutual of Omaha",
+      "Blue Cross Blue Shield of NE"
+    ],
+    "maPlansAvailable": 38,
+    "avgPremium": 0
+  },
+  {
+    "slug": "miami-fl",
+    "city": "Miami",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "stateSlug": "florida",
+    "population": "442K",
+    "tier": "mid",
+    "topCarriers": [
+      "Humana",
+      "UnitedHealthcare",
+      "Aetna",
+      "Devoted Health",
+      "WellCare",
+      "Simply Healthcare"
+    ],
+    "maPlansAvailable": 88,
+    "avgPremium": 0
+  },
+  {
+    "slug": "tampa-fl",
+    "city": "Tampa",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "stateSlug": "florida",
+    "population": "384K",
+    "tier": "mid",
+    "topCarriers": [
+      "Humana",
+      "UnitedHealthcare",
+      "Aetna",
+      "WellCare",
+      "Devoted Health",
+      "Florida Blue"
+    ],
+    "maPlansAvailable": 72,
+    "avgPremium": 0
+  },
+  {
+    "slug": "orlando-fl",
+    "city": "Orlando",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "stateSlug": "florida",
+    "population": "307K",
+    "tier": "mid",
+    "topCarriers": [
+      "Humana",
+      "UnitedHealthcare",
+      "Aetna",
+      "Devoted Health",
+      "WellCare",
+      "Florida Blue"
+    ],
+    "maPlansAvailable": 68,
+    "avgPremium": 0
+  },
+  {
+    "slug": "raleigh-nc",
+    "city": "Raleigh",
+    "state": "North Carolina",
+    "stateAbbr": "NC",
+    "stateSlug": "north-carolina",
+    "population": "467K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of NC",
+      "WellCare"
+    ],
+    "maPlansAvailable": 50,
+    "avgPremium": 0
+  },
+  {
+    "slug": "colorado-springs-co",
+    "city": "Colorado Springs",
+    "state": "Colorado",
+    "stateAbbr": "CO",
+    "stateSlug": "colorado",
+    "population": "478K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Kaiser Permanente",
+      "Humana",
+      "Anthem Blue Cross",
+      "Cigna"
+    ],
+    "maPlansAvailable": 45,
+    "avgPremium": 0
+  },
+  {
+    "slug": "long-beach-ca",
+    "city": "Long Beach",
+    "state": "California",
+    "stateAbbr": "CA",
+    "stateSlug": "california",
+    "population": "466K",
+    "tier": "mid",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "SCAN Health",
+      "Alignment Healthcare",
+      "Humana"
+    ],
+    "maPlansAvailable": 88,
+    "avgPremium": 0
+  },
+  {
+    "slug": "virginia-beach-va",
+    "city": "Virginia Beach",
+    "state": "Virginia",
+    "stateAbbr": "VA",
+    "stateSlug": "virginia",
+    "population": "459K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Anthem HealthKeepers",
+      "Optima Health"
+    ],
+    "maPlansAvailable": 48,
+    "avgPremium": 0
+  },
+  {
+    "slug": "minneapolis-mn",
+    "city": "Minneapolis",
+    "state": "Minnesota",
+    "stateAbbr": "MN",
+    "stateSlug": "minnesota",
+    "population": "429K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of MN",
+      "HealthPartners"
+    ],
+    "maPlansAvailable": 50,
+    "avgPremium": 0
+  },
+  {
+    "slug": "new-orleans-la",
+    "city": "New Orleans",
+    "state": "Louisiana",
+    "stateAbbr": "LA",
+    "stateSlug": "louisiana",
+    "population": "383K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of LA",
+      "Peoples Health"
+    ],
+    "maPlansAvailable": 55,
+    "avgPremium": 0
+  },
+  {
+    "slug": "tulsa-ok",
+    "city": "Tulsa",
+    "state": "Oklahoma",
+    "stateAbbr": "OK",
+    "stateSlug": "oklahoma",
+    "population": "413K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of OK",
+      "Aetna",
+      "CommunityCare"
+    ],
+    "maPlansAvailable": 38,
+    "avgPremium": 0
+  },
+  {
+    "slug": "wichita-ks",
+    "city": "Wichita",
+    "state": "Kansas",
+    "stateAbbr": "KS",
+    "stateSlug": "kansas",
+    "population": "397K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of KS",
+      "Aetna"
+    ],
+    "maPlansAvailable": 35,
+    "avgPremium": 0
+  },
+  {
+    "slug": "cleveland-oh",
+    "city": "Cleveland",
+    "state": "Ohio",
+    "stateAbbr": "OH",
+    "stateSlug": "ohio",
+    "population": "367K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Medical Mutual",
+      "SummaCare"
+    ],
+    "maPlansAvailable": 52,
+    "avgPremium": 0
+  },
+  {
+    "slug": "bakersfield-ca",
+    "city": "Bakersfield",
+    "state": "California",
+    "stateAbbr": "CA",
+    "stateSlug": "california",
+    "population": "380K",
+    "tier": "mid",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Molina"
+    ],
+    "maPlansAvailable": 48,
+    "avgPremium": 0
+  },
+  {
+    "slug": "aurora-co",
+    "city": "Aurora",
+    "state": "Colorado",
+    "stateAbbr": "CO",
+    "stateSlug": "colorado",
+    "population": "366K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Kaiser Permanente",
+      "Humana",
+      "Anthem Blue Cross",
+      "Cigna"
+    ],
+    "maPlansAvailable": 44,
+    "avgPremium": 0
+  },
+  {
+    "slug": "anaheim-ca",
+    "city": "Anaheim",
+    "state": "California",
+    "stateAbbr": "CA",
+    "stateSlug": "california",
+    "population": "346K",
+    "tier": "mid",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "SCAN Health",
+      "Alignment Healthcare",
+      "Humana"
+    ],
+    "maPlansAvailable": 85,
+    "avgPremium": 0
+  },
+  {
+    "slug": "corpus-christi-tx",
+    "city": "Corpus Christi",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "stateSlug": "texas",
+    "population": "317K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "WellCare",
+      "Cigna"
+    ],
+    "maPlansAvailable": 40,
+    "avgPremium": 0
+  },
+  {
+    "slug": "riverside-ca",
+    "city": "Riverside",
+    "state": "California",
+    "stateAbbr": "CA",
+    "stateSlug": "california",
+    "population": "314K",
+    "tier": "mid",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "SCAN Health",
+      "Molina",
+      "Humana"
+    ],
+    "maPlansAvailable": 78,
+    "avgPremium": 0
+  },
+  {
+    "slug": "lexington-ky",
+    "city": "Lexington",
+    "state": "Kentucky",
+    "stateAbbr": "KY",
+    "stateSlug": "kentucky",
+    "population": "322K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Aetna",
+      "WellCare"
+    ],
+    "maPlansAvailable": 42,
+    "avgPremium": 0
+  },
+  {
+    "slug": "henderson-nv",
+    "city": "Henderson",
+    "state": "Nevada",
+    "stateAbbr": "NV",
+    "stateSlug": "nevada",
+    "population": "310K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Aetna",
+      "Prominence Health"
+    ],
+    "maPlansAvailable": 50,
+    "avgPremium": 0
+  },
+  {
+    "slug": "stockton-ca",
+    "city": "Stockton",
+    "state": "California",
+    "stateAbbr": "CA",
+    "stateSlug": "california",
+    "population": "312K",
+    "tier": "mid",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Molina"
+    ],
+    "maPlansAvailable": 50,
+    "avgPremium": 0
+  },
+  {
+    "slug": "st-louis-mo",
+    "city": "St. Louis",
+    "state": "Missouri",
+    "stateAbbr": "MO",
+    "stateSlug": "missouri",
+    "population": "301K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Centene",
+      "Anthem Blue Cross"
+    ],
+    "maPlansAvailable": 45,
+    "avgPremium": 0
+  },
+  {
+    "slug": "pittsburgh-pa",
+    "city": "Pittsburgh",
+    "state": "Pennsylvania",
+    "stateAbbr": "PA",
+    "stateSlug": "pennsylvania",
+    "population": "302K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "UPMC",
+      "Highmark Blue Cross",
+      "Aetna"
+    ],
+    "maPlansAvailable": 62,
+    "avgPremium": 0
+  },
+  {
+    "slug": "cincinnati-oh",
+    "city": "Cincinnati",
+    "state": "Ohio",
+    "stateAbbr": "OH",
+    "stateSlug": "ohio",
+    "population": "309K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Medical Mutual",
+      "Aetna"
+    ],
+    "maPlansAvailable": 50,
+    "avgPremium": 0
+  },
+  {
+    "slug": "anchorage-ak",
+    "city": "Anchorage",
+    "state": "Alaska",
+    "stateAbbr": "AK",
+    "stateSlug": "alaska",
+    "population": "291K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Premera Blue Cross"
+    ],
+    "maPlansAvailable": 25,
+    "avgPremium": 0
+  },
+  {
+    "slug": "greensboro-nc",
+    "city": "Greensboro",
+    "state": "North Carolina",
+    "stateAbbr": "NC",
+    "stateSlug": "north-carolina",
+    "population": "296K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of NC"
+    ],
+    "maPlansAvailable": 46,
+    "avgPremium": 0
+  },
+  {
+    "slug": "plano-tx",
+    "city": "Plano",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "stateSlug": "texas",
+    "population": "285K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Cigna",
+      "Blue Cross Blue Shield of TX"
+    ],
+    "maPlansAvailable": 68,
+    "avgPremium": 0
+  },
+  {
+    "slug": "newark-nj",
+    "city": "Newark",
+    "state": "New Jersey",
+    "stateAbbr": "NJ",
+    "stateSlug": "new-jersey",
+    "population": "282K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Horizon BCBS of NJ",
+      "Cigna"
+    ],
+    "maPlansAvailable": 65,
+    "avgPremium": 0
+  },
+  {
+    "slug": "toledo-oh",
+    "city": "Toledo",
+    "state": "Ohio",
+    "stateAbbr": "OH",
+    "stateSlug": "ohio",
+    "population": "270K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Medical Mutual",
+      "Aetna"
+    ],
+    "maPlansAvailable": 46,
+    "avgPremium": 0
+  },
+  {
+    "slug": "st-paul-mn",
+    "city": "St. Paul",
+    "state": "Minnesota",
+    "stateAbbr": "MN",
+    "stateSlug": "minnesota",
+    "population": "311K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of MN",
+      "HealthPartners",
+      "Medica"
+    ],
+    "maPlansAvailable": 48,
+    "avgPremium": 0
+  },
+  {
+    "slug": "buffalo-ny",
+    "city": "Buffalo",
+    "state": "New York",
+    "stateAbbr": "NY",
+    "stateSlug": "new-york",
+    "population": "278K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Independent Health",
+      "BlueCross BlueShield of WNY"
+    ],
+    "maPlansAvailable": 58,
+    "avgPremium": 0
+  },
+  {
+    "slug": "gilbert-az",
+    "city": "Gilbert",
+    "state": "Arizona",
+    "stateAbbr": "AZ",
+    "stateSlug": "arizona",
+    "population": "267K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Banner Health",
+      "Cigna",
+      "Aetna"
+    ],
+    "maPlansAvailable": 58,
+    "avgPremium": 0
+  },
+  {
+    "slug": "madison-wi",
+    "city": "Madison",
+    "state": "Wisconsin",
+    "stateAbbr": "WI",
+    "stateSlug": "wisconsin",
+    "population": "269K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "WPS Health Solutions",
+      "Dean Health Plan",
+      "Network Health"
+    ],
+    "maPlansAvailable": 40,
+    "avgPremium": 0
+  },
+  {
+    "slug": "durham-nc",
+    "city": "Durham",
+    "state": "North Carolina",
+    "stateAbbr": "NC",
+    "stateSlug": "north-carolina",
+    "population": "274K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of NC"
+    ],
+    "maPlansAvailable": 46,
+    "avgPremium": 0
+  },
+  {
+    "slug": "lubbock-tx",
+    "city": "Lubbock",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "stateSlug": "texas",
+    "population": "258K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "WellCare",
+      "Cigna"
+    ],
+    "maPlansAvailable": 38,
+    "avgPremium": 0
+  },
+  {
+    "slug": "winston-salem-nc",
+    "city": "Winston-Salem",
+    "state": "North Carolina",
+    "stateAbbr": "NC",
+    "stateSlug": "north-carolina",
+    "population": "249K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of NC"
+    ],
+    "maPlansAvailable": 44,
+    "avgPremium": 0
+  },
+  {
+    "slug": "garland-tx",
+    "city": "Garland",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "stateSlug": "texas",
+    "population": "246K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Cigna",
+      "Blue Cross Blue Shield of TX"
+    ],
+    "maPlansAvailable": 68,
+    "avgPremium": 0
+  },
+  {
+    "slug": "scottsdale-az",
+    "city": "Scottsdale",
+    "state": "Arizona",
+    "stateAbbr": "AZ",
+    "stateSlug": "arizona",
+    "population": "241K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Banner Health",
+      "Cigna",
+      "Aetna"
+    ],
+    "maPlansAvailable": 62,
+    "avgPremium": 0
+  },
+  {
+    "slug": "norfolk-va",
+    "city": "Norfolk",
+    "state": "Virginia",
+    "stateAbbr": "VA",
+    "stateSlug": "virginia",
+    "population": "238K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Anthem HealthKeepers",
+      "Optima Health"
+    ],
+    "maPlansAvailable": 46,
+    "avgPremium": 0
+  },
+  {
+    "slug": "baton-rouge-la",
+    "city": "Baton Rouge",
+    "state": "Louisiana",
+    "stateAbbr": "LA",
+    "stateSlug": "louisiana",
+    "population": "227K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of LA"
+    ],
+    "maPlansAvailable": 48,
+    "avgPremium": 0
+  },
+  {
+    "slug": "spokane-wa",
+    "city": "Spokane",
+    "state": "Washington",
+    "stateAbbr": "WA",
+    "stateSlug": "washington",
+    "population": "222K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Premera Blue Cross",
+      "Regence",
+      "Molina"
+    ],
+    "maPlansAvailable": 42,
+    "avgPremium": 0
+  },
+  {
+    "slug": "glendale-az",
+    "city": "Glendale",
+    "state": "Arizona",
+    "stateAbbr": "AZ",
+    "stateSlug": "arizona",
+    "population": "252K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Banner Health",
+      "Cigna",
+      "Aetna"
+    ],
+    "maPlansAvailable": 58,
+    "avgPremium": 0
+  },
+  {
+    "slug": "hialeah-fl",
+    "city": "Hialeah",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "stateSlug": "florida",
+    "population": "224K",
+    "tier": "mid",
+    "topCarriers": [
+      "Humana",
+      "UnitedHealthcare",
+      "Aetna",
+      "Devoted Health",
+      "Simply Healthcare",
+      "WellCare"
+    ],
+    "maPlansAvailable": 90,
+    "avgPremium": 0
+  },
+  {
+    "slug": "chandler-az",
+    "city": "Chandler",
+    "state": "Arizona",
+    "stateAbbr": "AZ",
+    "stateSlug": "arizona",
+    "population": "261K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Banner Health",
+      "Cigna",
+      "Aetna"
+    ],
+    "maPlansAvailable": 58,
+    "avgPremium": 0
+  },
+  {
+    "slug": "laredo-tx",
+    "city": "Laredo",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "stateSlug": "texas",
+    "population": "255K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "WellCare",
+      "Molina"
+    ],
+    "maPlansAvailable": 38,
+    "avgPremium": 0
+  },
+  {
+    "slug": "reno-nv",
+    "city": "Reno",
+    "state": "Nevada",
+    "stateAbbr": "NV",
+    "stateSlug": "nevada",
+    "population": "255K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Aetna",
+      "Prominence Health"
+    ],
+    "maPlansAvailable": 45,
+    "avgPremium": 0
+  },
+  {
+    "slug": "richmond-va",
+    "city": "Richmond",
+    "state": "Virginia",
+    "stateAbbr": "VA",
+    "stateSlug": "virginia",
+    "population": "226K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Anthem HealthKeepers",
+      "Cigna"
+    ],
+    "maPlansAvailable": 48,
+    "avgPremium": 0
+  },
+  {
+    "slug": "irvine-ca",
+    "city": "Irvine",
+    "state": "California",
+    "stateAbbr": "CA",
+    "stateSlug": "california",
+    "population": "307K",
+    "tier": "mid",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "SCAN Health",
+      "Alignment Healthcare",
+      "Humana"
+    ],
+    "maPlansAvailable": 82,
+    "avgPremium": 0
+  },
+  {
+    "slug": "chesapeake-va",
+    "city": "Chesapeake",
+    "state": "Virginia",
+    "stateAbbr": "VA",
+    "stateSlug": "virginia",
+    "population": "244K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Anthem HealthKeepers",
+      "Optima Health"
+    ],
+    "maPlansAvailable": 46,
+    "avgPremium": 0
+  },
+  {
+    "slug": "irving-tx",
+    "city": "Irving",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "stateSlug": "texas",
+    "population": "240K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Cigna",
+      "Blue Cross Blue Shield of TX"
+    ],
+    "maPlansAvailable": 68,
+    "avgPremium": 0
+  },
+  {
+    "slug": "north-las-vegas-nv",
+    "city": "North Las Vegas",
+    "state": "Nevada",
+    "stateAbbr": "NV",
+    "stateSlug": "nevada",
+    "population": "262K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Aetna",
+      "Prominence Health"
+    ],
+    "maPlansAvailable": 50,
+    "avgPremium": 0
+  },
+  {
+    "slug": "st-petersburg-fl",
+    "city": "St. Petersburg",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "stateSlug": "florida",
+    "population": "258K",
+    "tier": "mid",
+    "topCarriers": [
+      "Humana",
+      "UnitedHealthcare",
+      "Aetna",
+      "WellCare",
+      "Devoted Health",
+      "Florida Blue"
+    ],
+    "maPlansAvailable": 70,
+    "avgPremium": 0
+  },
+  {
+    "slug": "jersey-city-nj",
+    "city": "Jersey City",
+    "state": "New Jersey",
+    "stateAbbr": "NJ",
+    "stateSlug": "new-jersey",
+    "population": "292K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Horizon BCBS of NJ",
+      "Cigna"
+    ],
+    "maPlansAvailable": 65,
+    "avgPremium": 0
+  },
+  {
+    "slug": "knoxville-tn",
+    "city": "Knoxville",
+    "state": "Tennessee",
+    "stateAbbr": "TN",
+    "stateSlug": "tennessee",
+    "population": "192K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Cigna",
+      "Blue Cross Blue Shield of TN"
+    ],
+    "maPlansAvailable": 42,
+    "avgPremium": 0
+  },
+  {
+    "slug": "worcester-ma",
+    "city": "Worcester",
+    "state": "Massachusetts",
+    "stateAbbr": "MA",
+    "stateSlug": "massachusetts",
+    "population": "206K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Tufts Health Plan",
+      "Blue Cross Blue Shield of MA",
+      "Humana",
+      "Fallon Health"
+    ],
+    "maPlansAvailable": 52,
+    "avgPremium": 0
+  },
+  {
+    "slug": "cape-coral-fl",
+    "city": "Cape Coral",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "stateSlug": "florida",
+    "population": "194K",
+    "tier": "mid",
+    "topCarriers": [
+      "Humana",
+      "UnitedHealthcare",
+      "Aetna",
+      "WellCare",
+      "Devoted Health",
+      "Florida Blue"
+    ],
+    "maPlansAvailable": 68,
+    "avgPremium": 0
+  },
+  {
+    "slug": "fort-lauderdale-fl",
+    "city": "Fort Lauderdale",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "stateSlug": "florida",
+    "population": "182K",
+    "tier": "mid",
+    "topCarriers": [
+      "Humana",
+      "UnitedHealthcare",
+      "Aetna",
+      "Devoted Health",
+      "Simply Healthcare",
+      "Florida Blue"
+    ],
+    "maPlansAvailable": 85,
+    "avgPremium": 0
+  },
+  {
+    "slug": "akron-oh",
+    "city": "Akron",
+    "state": "Ohio",
+    "stateAbbr": "OH",
+    "stateSlug": "ohio",
+    "population": "190K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Medical Mutual",
+      "SummaCare"
+    ],
+    "maPlansAvailable": 48,
+    "avgPremium": 0
+  },
+  {
+    "slug": "montgomery-al",
+    "city": "Montgomery",
+    "state": "Alabama",
+    "stateAbbr": "AL",
+    "stateSlug": "alabama",
+    "population": "200K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of AL",
+      "WellCare"
+    ],
+    "maPlansAvailable": 40,
+    "avgPremium": 0
+  },
+  {
+    "slug": "birmingham-al",
+    "city": "Birmingham",
+    "state": "Alabama",
+    "stateAbbr": "AL",
+    "stateSlug": "alabama",
+    "population": "212K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of AL",
+      "RegionalCare"
+    ],
+    "maPlansAvailable": 42,
+    "avgPremium": 0
+  },
+  {
+    "slug": "huntsville-al",
+    "city": "Huntsville",
+    "state": "Alabama",
+    "stateAbbr": "AL",
+    "stateSlug": "alabama",
+    "population": "215K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of AL"
+    ],
+    "maPlansAvailable": 38,
+    "avgPremium": 0
+  },
+  {
+    "slug": "mobile-al",
+    "city": "Mobile",
+    "state": "Alabama",
+    "stateAbbr": "AL",
+    "stateSlug": "alabama",
+    "population": "187K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of AL"
+    ],
+    "maPlansAvailable": 36,
+    "avgPremium": 0
+  },
+  {
+    "slug": "tuscaloosa-al",
+    "city": "Tuscaloosa",
+    "state": "Alabama",
+    "stateAbbr": "AL",
+    "stateSlug": "alabama",
+    "population": "100K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of AL",
+      "Aetna"
+    ],
+    "maPlansAvailable": 32,
+    "avgPremium": 0
+  },
+  {
+    "slug": "juneau-ak",
+    "city": "Juneau",
+    "state": "Alaska",
+    "stateAbbr": "AK",
+    "stateSlug": "alaska",
+    "population": "32K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Premera Blue Cross",
+      "Aetna"
+    ],
+    "maPlansAvailable": 25,
+    "avgPremium": 0
+  },
+  {
+    "slug": "fairbanks-ak",
+    "city": "Fairbanks",
+    "state": "Alaska",
+    "stateAbbr": "AK",
+    "stateSlug": "alaska",
+    "population": "31K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Premera Blue Cross",
+      "Aetna"
+    ],
+    "maPlansAvailable": 25,
+    "avgPremium": 0
+  },
+  {
+    "slug": "tempe-az",
+    "city": "Tempe",
+    "state": "Arizona",
+    "stateAbbr": "AZ",
+    "stateSlug": "arizona",
+    "population": "195K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Banner Health",
+      "Cigna",
+      "Aetna"
+    ],
+    "maPlansAvailable": 58,
+    "avgPremium": 0
+  },
+  {
+    "slug": "peoria-az",
+    "city": "Peoria",
+    "state": "Arizona",
+    "stateAbbr": "AZ",
+    "stateSlug": "arizona",
+    "population": "175K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Banner Health",
+      "Aetna"
+    ],
+    "maPlansAvailable": 55,
+    "avgPremium": 0
+  },
+  {
+    "slug": "little-rock-ar",
+    "city": "Little Rock",
+    "state": "Arkansas",
+    "stateAbbr": "AR",
+    "stateSlug": "arkansas",
+    "population": "202K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Arkansas Blue Cross Blue Shield"
+    ],
+    "maPlansAvailable": 35,
+    "avgPremium": 0
+  },
+  {
+    "slug": "fort-smith-ar",
+    "city": "Fort Smith",
+    "state": "Arkansas",
+    "stateAbbr": "AR",
+    "stateSlug": "arkansas",
+    "population": "88K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Arkansas Blue Cross Blue Shield",
+      "Aetna"
+    ],
+    "maPlansAvailable": 30,
+    "avgPremium": 0
+  },
+  {
+    "slug": "fayetteville-ar",
+    "city": "Fayetteville",
+    "state": "Arkansas",
+    "stateAbbr": "AR",
+    "stateSlug": "arkansas",
+    "population": "99K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Arkansas Blue Cross Blue Shield"
+    ],
+    "maPlansAvailable": 28,
+    "avgPremium": 0
+  },
+  {
+    "slug": "oakland-ca",
+    "city": "Oakland",
+    "state": "California",
+    "stateAbbr": "CA",
+    "stateSlug": "california",
+    "population": "440K",
+    "tier": "mid",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "SCAN Health",
+      "Humana",
+      "Blue Shield of CA"
+    ],
+    "maPlansAvailable": 75,
+    "avgPremium": 0
+  },
+  {
+    "slug": "santa-ana-ca",
+    "city": "Santa Ana",
+    "state": "California",
+    "stateAbbr": "CA",
+    "stateSlug": "california",
+    "population": "310K",
+    "tier": "mid",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "SCAN Health",
+      "Molina",
+      "Humana"
+    ],
+    "maPlansAvailable": 82,
+    "avgPremium": 0
+  },
+  {
+    "slug": "chula-vista-ca",
+    "city": "Chula Vista",
+    "state": "California",
+    "stateAbbr": "CA",
+    "stateSlug": "california",
+    "population": "275K",
+    "tier": "mid",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "Sharp Health Plan",
+      "SCAN Health",
+      "Humana"
+    ],
+    "maPlansAvailable": 65,
+    "avgPremium": 0
+  },
+  {
+    "slug": "fort-collins-co",
+    "city": "Fort Collins",
+    "state": "Colorado",
+    "stateAbbr": "CO",
+    "stateSlug": "colorado",
+    "population": "161K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Kaiser Permanente",
+      "Humana",
+      "Anthem Blue Cross"
+    ],
+    "maPlansAvailable": 42,
+    "avgPremium": 0
+  },
+  {
+    "slug": "lakewood-co",
+    "city": "Lakewood",
+    "state": "Colorado",
+    "stateAbbr": "CO",
+    "stateSlug": "colorado",
+    "population": "156K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Kaiser Permanente",
+      "Humana",
+      "Anthem Blue Cross",
+      "Cigna"
+    ],
+    "maPlansAvailable": 44,
+    "avgPremium": 0
+  },
+  {
+    "slug": "pueblo-co",
+    "city": "Pueblo",
+    "state": "Colorado",
+    "stateAbbr": "CO",
+    "stateSlug": "colorado",
+    "population": "111K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Kaiser Permanente",
+      "Humana",
+      "Anthem Blue Cross"
+    ],
+    "maPlansAvailable": 38,
+    "avgPremium": 0
+  },
+  {
+    "slug": "hartford-ct",
+    "city": "Hartford",
+    "state": "Connecticut",
+    "stateAbbr": "CT",
+    "stateSlug": "connecticut",
+    "population": "121K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "ConnectiCare",
+      "Cigna"
+    ],
+    "maPlansAvailable": 52,
+    "avgPremium": 0
+  },
+  {
+    "slug": "bridgeport-ct",
+    "city": "Bridgeport",
+    "state": "Connecticut",
+    "stateAbbr": "CT",
+    "stateSlug": "connecticut",
+    "population": "147K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "ConnectiCare",
+      "Cigna"
+    ],
+    "maPlansAvailable": 50,
+    "avgPremium": 0
+  },
+  {
+    "slug": "new-haven-ct",
+    "city": "New Haven",
+    "state": "Connecticut",
+    "stateAbbr": "CT",
+    "stateSlug": "connecticut",
+    "population": "130K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "ConnectiCare",
+      "Cigna"
+    ],
+    "maPlansAvailable": 50,
+    "avgPremium": 0
+  },
+  {
+    "slug": "stamford-ct",
+    "city": "Stamford",
+    "state": "Connecticut",
+    "stateAbbr": "CT",
+    "stateSlug": "connecticut",
+    "population": "135K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Aetna",
+      "Cigna",
+      "ConnectiCare",
+      "Humana"
+    ],
+    "maPlansAvailable": 55,
+    "avgPremium": 0
+  },
+  {
+    "slug": "dover-de",
+    "city": "Dover",
+    "state": "Delaware",
+    "stateAbbr": "DE",
+    "stateSlug": "delaware",
+    "population": "39K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Highmark BCBS of DE"
+    ],
+    "maPlansAvailable": 35,
+    "avgPremium": 0
+  },
+  {
+    "slug": "wilmington-de",
+    "city": "Wilmington",
+    "state": "Delaware",
+    "stateAbbr": "DE",
+    "stateSlug": "delaware",
+    "population": "70K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Highmark BCBS of DE",
+      "Cigna"
+    ],
+    "maPlansAvailable": 38,
+    "avgPremium": 0
+  },
+  {
+    "slug": "tallahassee-fl",
+    "city": "Tallahassee",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "stateSlug": "florida",
+    "population": "196K",
+    "tier": "mid",
+    "topCarriers": [
+      "Humana",
+      "UnitedHealthcare",
+      "Aetna",
+      "Florida Blue",
+      "WellCare"
+    ],
+    "maPlansAvailable": 55,
+    "avgPremium": 0
+  },
+  {
+    "slug": "west-palm-beach-fl",
+    "city": "West Palm Beach",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "stateSlug": "florida",
+    "population": "111K",
+    "tier": "mid",
+    "topCarriers": [
+      "Humana",
+      "UnitedHealthcare",
+      "Aetna",
+      "Devoted Health",
+      "Simply Healthcare",
+      "Florida Blue"
+    ],
+    "maPlansAvailable": 82,
+    "avgPremium": 0
+  },
+  {
+    "slug": "pembroke-pines-fl",
+    "city": "Pembroke Pines",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "stateSlug": "florida",
+    "population": "171K",
+    "tier": "mid",
+    "topCarriers": [
+      "Humana",
+      "UnitedHealthcare",
+      "Aetna",
+      "Devoted Health",
+      "Simply Healthcare",
+      "Florida Blue"
+    ],
+    "maPlansAvailable": 80,
+    "avgPremium": 0
+  },
+  {
+    "slug": "hollywood-fl",
+    "city": "Hollywood",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "stateSlug": "florida",
+    "population": "153K",
+    "tier": "mid",
+    "topCarriers": [
+      "Humana",
+      "UnitedHealthcare",
+      "Aetna",
+      "Devoted Health",
+      "Simply Healthcare"
+    ],
+    "maPlansAvailable": 82,
+    "avgPremium": 0
+  },
+  {
+    "slug": "savannah-ga",
+    "city": "Savannah",
+    "state": "Georgia",
+    "stateAbbr": "GA",
+    "stateSlug": "georgia",
+    "population": "147K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Anthem Blue Cross",
+      "WellCare"
+    ],
+    "maPlansAvailable": 48,
+    "avgPremium": 0
+  },
+  {
+    "slug": "macon-ga",
+    "city": "Macon",
+    "state": "Georgia",
+    "stateAbbr": "GA",
+    "stateSlug": "georgia",
+    "population": "153K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Anthem Blue Cross"
+    ],
+    "maPlansAvailable": 44,
+    "avgPremium": 0
+  },
+  {
+    "slug": "columbus-ga",
+    "city": "Columbus",
+    "state": "Georgia",
+    "stateAbbr": "GA",
+    "stateSlug": "georgia",
+    "population": "206K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Anthem Blue Cross"
+    ],
+    "maPlansAvailable": 42,
+    "avgPremium": 0
+  },
+  {
+    "slug": "augusta-ga",
+    "city": "Augusta",
+    "state": "Georgia",
+    "stateAbbr": "GA",
+    "stateSlug": "georgia",
+    "population": "202K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Anthem Blue Cross",
+      "WellCare"
+    ],
+    "maPlansAvailable": 44,
+    "avgPremium": 0
+  },
+  {
+    "slug": "honolulu-hi",
+    "city": "Honolulu",
+    "state": "Hawaii",
+    "stateAbbr": "HI",
+    "stateSlug": "hawaii",
+    "population": "350K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "HMSA",
+      "Kaiser Permanente Hawaii",
+      "AlohaCare"
+    ],
+    "maPlansAvailable": 35,
+    "avgPremium": 0
+  },
+  {
+    "slug": "hilo-hi",
+    "city": "Hilo",
+    "state": "Hawaii",
+    "stateAbbr": "HI",
+    "stateSlug": "hawaii",
+    "population": "44K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "HMSA",
+      "Kaiser Permanente Hawaii",
+      "AlohaCare"
+    ],
+    "maPlansAvailable": 28,
+    "avgPremium": 0
+  },
+  {
+    "slug": "boise-id",
+    "city": "Boise",
+    "state": "Idaho",
+    "stateAbbr": "ID",
+    "stateSlug": "idaho",
+    "population": "235K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross of Idaho",
+      "SelectHealth"
+    ],
+    "maPlansAvailable": 35,
+    "avgPremium": 0
+  },
+  {
+    "slug": "nampa-id",
+    "city": "Nampa",
+    "state": "Idaho",
+    "stateAbbr": "ID",
+    "stateSlug": "idaho",
+    "population": "100K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross of Idaho",
+      "SelectHealth"
+    ],
+    "maPlansAvailable": 30,
+    "avgPremium": 0
+  },
+  {
+    "slug": "meridian-id",
+    "city": "Meridian",
+    "state": "Idaho",
+    "stateAbbr": "ID",
+    "stateSlug": "idaho",
+    "population": "114K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross of Idaho",
+      "SelectHealth"
+    ],
+    "maPlansAvailable": 30,
+    "avgPremium": 0
+  },
+  {
+    "slug": "idaho-falls-id",
+    "city": "Idaho Falls",
+    "state": "Idaho",
+    "stateAbbr": "ID",
+    "stateSlug": "idaho",
+    "population": "62K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross of Idaho",
+      "SelectHealth"
+    ],
+    "maPlansAvailable": 28,
+    "avgPremium": 0
+  },
+  {
+    "slug": "springfield-il",
+    "city": "Springfield",
+    "state": "Illinois",
+    "stateAbbr": "IL",
+    "stateSlug": "illinois",
+    "population": "114K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of IL",
+      "Cigna"
+    ],
+    "maPlansAvailable": 45,
+    "avgPremium": 0
+  },
+  {
+    "slug": "rockford-il",
+    "city": "Rockford",
+    "state": "Illinois",
+    "stateAbbr": "IL",
+    "stateSlug": "illinois",
+    "population": "148K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of IL"
+    ],
+    "maPlansAvailable": 42,
+    "avgPremium": 0
+  },
+  {
+    "slug": "peoria-il",
+    "city": "Peoria",
+    "state": "Illinois",
+    "stateAbbr": "IL",
+    "stateSlug": "illinois",
+    "population": "113K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of IL"
+    ],
+    "maPlansAvailable": 42,
+    "avgPremium": 0
+  },
+  {
+    "slug": "aurora-il",
+    "city": "Aurora",
+    "state": "Illinois",
+    "stateAbbr": "IL",
+    "stateSlug": "illinois",
+    "population": "200K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of IL",
+      "Cigna"
+    ],
+    "maPlansAvailable": 60,
+    "avgPremium": 0
+  },
+  {
+    "slug": "fort-wayne-in",
+    "city": "Fort Wayne",
+    "state": "Indiana",
+    "stateAbbr": "IN",
+    "stateSlug": "indiana",
+    "population": "270K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Aetna",
+      "MDwise"
+    ],
+    "maPlansAvailable": 45,
+    "avgPremium": 0
+  },
+  {
+    "slug": "south-bend-in",
+    "city": "South Bend",
+    "state": "Indiana",
+    "stateAbbr": "IN",
+    "stateSlug": "indiana",
+    "population": "103K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Aetna"
+    ],
+    "maPlansAvailable": 40,
+    "avgPremium": 0
+  },
+  {
+    "slug": "evansville-in",
+    "city": "Evansville",
+    "state": "Indiana",
+    "stateAbbr": "IN",
+    "stateSlug": "indiana",
+    "population": "117K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Aetna"
+    ],
+    "maPlansAvailable": 38,
+    "avgPremium": 0
+  },
+  {
+    "slug": "des-moines-ia",
+    "city": "Des Moines",
+    "state": "Iowa",
+    "stateAbbr": "IA",
+    "stateSlug": "iowa",
+    "population": "214K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Wellmark BCBS of Iowa"
+    ],
+    "maPlansAvailable": 38,
+    "avgPremium": 0
+  },
+  {
+    "slug": "cedar-rapids-ia",
+    "city": "Cedar Rapids",
+    "state": "Iowa",
+    "stateAbbr": "IA",
+    "stateSlug": "iowa",
+    "population": "135K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Wellmark BCBS of Iowa"
+    ],
+    "maPlansAvailable": 34,
+    "avgPremium": 0
+  },
+  {
+    "slug": "davenport-ia",
+    "city": "Davenport",
+    "state": "Iowa",
+    "stateAbbr": "IA",
+    "stateSlug": "iowa",
+    "population": "102K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Wellmark BCBS of Iowa"
+    ],
+    "maPlansAvailable": 32,
+    "avgPremium": 0
+  },
+  {
+    "slug": "topeka-ks",
+    "city": "Topeka",
+    "state": "Kansas",
+    "stateAbbr": "KS",
+    "stateSlug": "kansas",
+    "population": "126K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of KS",
+      "Aetna"
+    ],
+    "maPlansAvailable": 32,
+    "avgPremium": 0
+  },
+  {
+    "slug": "overland-park-ks",
+    "city": "Overland Park",
+    "state": "Kansas",
+    "stateAbbr": "KS",
+    "stateSlug": "kansas",
+    "population": "197K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of KS",
+      "Aetna"
+    ],
+    "maPlansAvailable": 38,
+    "avgPremium": 0
+  },
+  {
+    "slug": "kansas-city-ks",
+    "city": "Kansas City",
+    "state": "Kansas",
+    "stateAbbr": "KS",
+    "stateSlug": "kansas",
+    "population": "152K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of KS",
+      "Aetna"
+    ],
+    "maPlansAvailable": 36,
+    "avgPremium": 0
+  },
+  {
+    "slug": "frankfort-ky",
+    "city": "Frankfort",
+    "state": "Kentucky",
+    "stateAbbr": "KY",
+    "stateSlug": "kentucky",
+    "population": "28K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "WellCare"
+    ],
+    "maPlansAvailable": 30,
+    "avgPremium": 0
+  },
+  {
+    "slug": "bowling-green-ky",
+    "city": "Bowling Green",
+    "state": "Kentucky",
+    "stateAbbr": "KY",
+    "stateSlug": "kentucky",
+    "population": "72K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Aetna"
+    ],
+    "maPlansAvailable": 32,
+    "avgPremium": 0
+  },
+  {
+    "slug": "shreveport-la",
+    "city": "Shreveport",
+    "state": "Louisiana",
+    "stateAbbr": "LA",
+    "stateSlug": "louisiana",
+    "population": "187K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of LA"
+    ],
+    "maPlansAvailable": 42,
+    "avgPremium": 0
+  },
+  {
+    "slug": "lafayette-la",
+    "city": "Lafayette",
+    "state": "Louisiana",
+    "stateAbbr": "LA",
+    "stateSlug": "louisiana",
+    "population": "120K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of LA"
+    ],
+    "maPlansAvailable": 38,
+    "avgPremium": 0
+  },
+  {
+    "slug": "portland-me",
+    "city": "Portland",
+    "state": "Maine",
+    "stateAbbr": "ME",
+    "stateSlug": "maine",
+    "population": "68K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Anthem Blue Cross of ME"
+    ],
+    "maPlansAvailable": 30,
+    "avgPremium": 0
+  },
+  {
+    "slug": "augusta-me",
+    "city": "Augusta",
+    "state": "Maine",
+    "stateAbbr": "ME",
+    "stateSlug": "maine",
+    "population": "19K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross of ME",
+      "Aetna"
+    ],
+    "maPlansAvailable": 28,
+    "avgPremium": 0
+  },
+  {
+    "slug": "bangor-me",
+    "city": "Bangor",
+    "state": "Maine",
+    "stateAbbr": "ME",
+    "stateSlug": "maine",
+    "population": "31K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross of ME",
+      "Aetna"
+    ],
+    "maPlansAvailable": 28,
+    "avgPremium": 0
+  },
+  {
+    "slug": "annapolis-md",
+    "city": "Annapolis",
+    "state": "Maryland",
+    "stateAbbr": "MD",
+    "stateSlug": "maryland",
+    "population": "40K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "CareFirst Blue Cross",
+      "Humana",
+      "Aetna"
+    ],
+    "maPlansAvailable": 42,
+    "avgPremium": 0
+  },
+  {
+    "slug": "silver-spring-md",
+    "city": "Silver Spring",
+    "state": "Maryland",
+    "stateAbbr": "MD",
+    "stateSlug": "maryland",
+    "population": "81K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "CareFirst Blue Cross",
+      "Humana",
+      "Aetna",
+      "Kaiser Permanente"
+    ],
+    "maPlansAvailable": 48,
+    "avgPremium": 0
+  },
+  {
+    "slug": "columbia-md",
+    "city": "Columbia",
+    "state": "Maryland",
+    "stateAbbr": "MD",
+    "stateSlug": "maryland",
+    "population": "103K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "CareFirst Blue Cross",
+      "Humana",
+      "Aetna",
+      "Kaiser Permanente"
+    ],
+    "maPlansAvailable": 48,
+    "avgPremium": 0
+  },
+  {
+    "slug": "springfield-ma",
+    "city": "Springfield",
+    "state": "Massachusetts",
+    "stateAbbr": "MA",
+    "stateSlug": "massachusetts",
+    "population": "155K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Tufts Health Plan",
+      "Blue Cross Blue Shield of MA",
+      "Humana",
+      "Fallon Health"
+    ],
+    "maPlansAvailable": 50,
+    "avgPremium": 0
+  },
+  {
+    "slug": "lowell-ma",
+    "city": "Lowell",
+    "state": "Massachusetts",
+    "stateAbbr": "MA",
+    "stateSlug": "massachusetts",
+    "population": "115K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Tufts Health Plan",
+      "Blue Cross Blue Shield of MA",
+      "Humana"
+    ],
+    "maPlansAvailable": 52,
+    "avgPremium": 0
+  },
+  {
+    "slug": "cambridge-ma",
+    "city": "Cambridge",
+    "state": "Massachusetts",
+    "stateAbbr": "MA",
+    "stateSlug": "massachusetts",
+    "population": "118K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Tufts Health Plan",
+      "Blue Cross Blue Shield of MA",
+      "Humana",
+      "Fallon Health"
+    ],
+    "maPlansAvailable": 55,
+    "avgPremium": 0
+  },
+  {
+    "slug": "detroit-mi",
+    "city": "Detroit",
+    "state": "Michigan",
+    "stateAbbr": "MI",
+    "stateSlug": "michigan",
+    "population": "639K",
+    "tier": "large",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of MI",
+      "Priority Health"
+    ],
+    "maPlansAvailable": 60,
+    "avgPremium": 0
+  },
+  {
+    "slug": "lansing-mi",
+    "city": "Lansing",
+    "state": "Michigan",
+    "stateAbbr": "MI",
+    "stateSlug": "michigan",
+    "population": "112K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of MI",
+      "Priority Health"
+    ],
+    "maPlansAvailable": 50,
+    "avgPremium": 0
+  },
+  {
+    "slug": "grand-rapids-mi",
+    "city": "Grand Rapids",
+    "state": "Michigan",
+    "stateAbbr": "MI",
+    "stateSlug": "michigan",
+    "population": "198K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of MI",
+      "Priority Health"
+    ],
+    "maPlansAvailable": 52,
+    "avgPremium": 0
+  },
+  {
+    "slug": "ann-arbor-mi",
+    "city": "Ann Arbor",
+    "state": "Michigan",
+    "stateAbbr": "MI",
+    "stateSlug": "michigan",
+    "population": "123K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of MI",
+      "Priority Health",
+      "Aetna"
+    ],
+    "maPlansAvailable": 50,
+    "avgPremium": 0
+  },
+  {
+    "slug": "sterling-heights-mi",
+    "city": "Sterling Heights",
+    "state": "Michigan",
+    "stateAbbr": "MI",
+    "stateSlug": "michigan",
+    "population": "134K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of MI",
+      "Priority Health",
+      "Aetna"
+    ],
+    "maPlansAvailable": 55,
+    "avgPremium": 0
+  },
+  {
+    "slug": "rochester-mn",
+    "city": "Rochester",
+    "state": "Minnesota",
+    "stateAbbr": "MN",
+    "stateSlug": "minnesota",
+    "population": "121K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of MN",
+      "HealthPartners",
+      "Medica"
+    ],
+    "maPlansAvailable": 45,
+    "avgPremium": 0
+  },
+  {
+    "slug": "duluth-mn",
+    "city": "Duluth",
+    "state": "Minnesota",
+    "stateAbbr": "MN",
+    "stateSlug": "minnesota",
+    "population": "91K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of MN",
+      "HealthPartners"
+    ],
+    "maPlansAvailable": 38,
+    "avgPremium": 0
+  },
+  {
+    "slug": "jackson-ms",
+    "city": "Jackson",
+    "state": "Mississippi",
+    "stateAbbr": "MS",
+    "stateSlug": "mississippi",
+    "population": "153K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of MS",
+      "Magnolia Health"
+    ],
+    "maPlansAvailable": 38,
+    "avgPremium": 0
+  },
+  {
+    "slug": "biloxi-ms",
+    "city": "Biloxi",
+    "state": "Mississippi",
+    "stateAbbr": "MS",
+    "stateSlug": "mississippi",
+    "population": "46K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of MS",
+      "Aetna"
+    ],
+    "maPlansAvailable": 32,
+    "avgPremium": 0
+  },
+  {
+    "slug": "gulfport-ms",
+    "city": "Gulfport",
+    "state": "Mississippi",
+    "stateAbbr": "MS",
+    "stateSlug": "mississippi",
+    "population": "72K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of MS"
+    ],
+    "maPlansAvailable": 32,
+    "avgPremium": 0
+  },
+  {
+    "slug": "jefferson-city-mo",
+    "city": "Jefferson City",
+    "state": "Missouri",
+    "stateAbbr": "MO",
+    "stateSlug": "missouri",
+    "population": "43K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue KC"
+    ],
+    "maPlansAvailable": 32,
+    "avgPremium": 0
+  },
+  {
+    "slug": "springfield-mo",
+    "city": "Springfield",
+    "state": "Missouri",
+    "stateAbbr": "MO",
+    "stateSlug": "missouri",
+    "population": "169K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Anthem Blue Cross",
+      "Cox HealthPlans"
+    ],
+    "maPlansAvailable": 40,
+    "avgPremium": 0
+  },
+  {
+    "slug": "columbia-mo",
+    "city": "Columbia",
+    "state": "Missouri",
+    "stateAbbr": "MO",
+    "stateSlug": "missouri",
+    "population": "123K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue KC",
+      "Centene"
+    ],
+    "maPlansAvailable": 38,
+    "avgPremium": 0
+  },
+  {
+    "slug": "helena-mt",
+    "city": "Helena",
+    "state": "Montana",
+    "stateAbbr": "MT",
+    "stateSlug": "montana",
+    "population": "33K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of MT",
+      "Aetna"
+    ],
+    "maPlansAvailable": 28,
+    "avgPremium": 0
+  },
+  {
+    "slug": "billings-mt",
+    "city": "Billings",
+    "state": "Montana",
+    "stateAbbr": "MT",
+    "stateSlug": "montana",
+    "population": "117K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of MT",
+      "Aetna"
+    ],
+    "maPlansAvailable": 30,
+    "avgPremium": 0
+  },
+  {
+    "slug": "missoula-mt",
+    "city": "Missoula",
+    "state": "Montana",
+    "stateAbbr": "MT",
+    "stateSlug": "montana",
+    "population": "73K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of MT"
+    ],
+    "maPlansAvailable": 28,
+    "avgPremium": 0
+  },
+  {
+    "slug": "lincoln-ne",
+    "city": "Lincoln",
+    "state": "Nebraska",
+    "stateAbbr": "NE",
+    "stateSlug": "nebraska",
+    "population": "292K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Mutual of Omaha",
+      "Blue Cross Blue Shield of NE"
+    ],
+    "maPlansAvailable": 36,
+    "avgPremium": 0
+  },
+  {
+    "slug": "carson-city-nv",
+    "city": "Carson City",
+    "state": "Nevada",
+    "stateAbbr": "NV",
+    "stateSlug": "nevada",
+    "population": "58K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Prominence Health"
+    ],
+    "maPlansAvailable": 35,
+    "avgPremium": 0
+  },
+  {
+    "slug": "sparks-nv",
+    "city": "Sparks",
+    "state": "Nevada",
+    "stateAbbr": "NV",
+    "stateSlug": "nevada",
+    "population": "108K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Prominence Health"
+    ],
+    "maPlansAvailable": 42,
+    "avgPremium": 0
+  },
+  {
+    "slug": "manchester-nh",
+    "city": "Manchester",
+    "state": "New Hampshire",
+    "stateAbbr": "NH",
+    "stateSlug": "new-hampshire",
+    "population": "115K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Anthem Blue Cross of NH"
+    ],
+    "maPlansAvailable": 38,
+    "avgPremium": 0
+  },
+  {
+    "slug": "concord-nh",
+    "city": "Concord",
+    "state": "New Hampshire",
+    "stateAbbr": "NH",
+    "stateSlug": "new-hampshire",
+    "population": "44K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Anthem Blue Cross of NH"
+    ],
+    "maPlansAvailable": 35,
+    "avgPremium": 0
+  },
+  {
+    "slug": "nashua-nh",
+    "city": "Nashua",
+    "state": "New Hampshire",
+    "stateAbbr": "NH",
+    "stateSlug": "new-hampshire",
+    "population": "90K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Anthem Blue Cross of NH"
+    ],
+    "maPlansAvailable": 36,
+    "avgPremium": 0
+  },
+  {
+    "slug": "trenton-nj",
+    "city": "Trenton",
+    "state": "New Jersey",
+    "stateAbbr": "NJ",
+    "stateSlug": "new-jersey",
+    "population": "90K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Horizon BCBS of NJ",
+      "Cigna"
+    ],
+    "maPlansAvailable": 62,
+    "avgPremium": 0
+  },
+  {
+    "slug": "elizabeth-nj",
+    "city": "Elizabeth",
+    "state": "New Jersey",
+    "stateAbbr": "NJ",
+    "stateSlug": "new-jersey",
+    "population": "137K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Horizon BCBS of NJ",
+      "Cigna"
+    ],
+    "maPlansAvailable": 65,
+    "avgPremium": 0
+  },
+  {
+    "slug": "paterson-nj",
+    "city": "Paterson",
+    "state": "New Jersey",
+    "stateAbbr": "NJ",
+    "stateSlug": "new-jersey",
+    "population": "159K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Horizon BCBS of NJ",
+      "WellCare"
+    ],
+    "maPlansAvailable": 65,
+    "avgPremium": 0
+  },
+  {
+    "slug": "camden-nj",
+    "city": "Camden",
+    "state": "New Jersey",
+    "stateAbbr": "NJ",
+    "stateSlug": "new-jersey",
+    "population": "74K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Horizon BCBS of NJ",
+      "Independence Blue Cross"
+    ],
+    "maPlansAvailable": 60,
+    "avgPremium": 0
+  },
+  {
+    "slug": "santa-fe-nm",
+    "city": "Santa Fe",
+    "state": "New Mexico",
+    "stateAbbr": "NM",
+    "stateSlug": "new-mexico",
+    "population": "85K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of NM",
+      "Presbyterian"
+    ],
+    "maPlansAvailable": 35,
+    "avgPremium": 0
+  },
+  {
+    "slug": "las-cruces-nm",
+    "city": "Las Cruces",
+    "state": "New Mexico",
+    "stateAbbr": "NM",
+    "stateSlug": "new-mexico",
+    "population": "111K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of NM",
+      "Presbyterian"
+    ],
+    "maPlansAvailable": 34,
+    "avgPremium": 0
+  },
+  {
+    "slug": "albany-ny",
+    "city": "Albany",
+    "state": "New York",
+    "stateAbbr": "NY",
+    "stateSlug": "new-york",
+    "population": "99K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "BlueCross BlueShield of Central NY",
+      "Capital District Physicians Health Plan"
+    ],
+    "maPlansAvailable": 60,
+    "avgPremium": 0
+  },
+  {
+    "slug": "rochester-ny",
+    "city": "Rochester",
+    "state": "New York",
+    "stateAbbr": "NY",
+    "stateSlug": "new-york",
+    "population": "211K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Excellus BlueCross BlueShield",
+      "Fidelis Care"
+    ],
+    "maPlansAvailable": 62,
+    "avgPremium": 0
+  },
+  {
+    "slug": "yonkers-ny",
+    "city": "Yonkers",
+    "state": "New York",
+    "stateAbbr": "NY",
+    "stateSlug": "new-york",
+    "population": "211K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "EmblemHealth",
+      "Fidelis Care"
+    ],
+    "maPlansAvailable": 80,
+    "avgPremium": 0
+  },
+  {
+    "slug": "syracuse-ny",
+    "city": "Syracuse",
+    "state": "New York",
+    "stateAbbr": "NY",
+    "stateSlug": "new-york",
+    "population": "148K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Excellus BlueCross BlueShield",
+      "Fidelis Care"
+    ],
+    "maPlansAvailable": 58,
+    "avgPremium": 0
+  },
+  {
+    "slug": "fayetteville-nc",
+    "city": "Fayetteville",
+    "state": "North Carolina",
+    "stateAbbr": "NC",
+    "stateSlug": "north-carolina",
+    "population": "208K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of NC",
+      "WellCare"
+    ],
+    "maPlansAvailable": 46,
+    "avgPremium": 0
+  },
+  {
+    "slug": "cary-nc",
+    "city": "Cary",
+    "state": "North Carolina",
+    "stateAbbr": "NC",
+    "stateSlug": "north-carolina",
+    "population": "174K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of NC"
+    ],
+    "maPlansAvailable": 48,
+    "avgPremium": 0
+  },
+  {
+    "slug": "wilmington-nc",
+    "city": "Wilmington",
+    "state": "North Carolina",
+    "stateAbbr": "NC",
+    "stateSlug": "north-carolina",
+    "population": "115K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of NC"
+    ],
+    "maPlansAvailable": 44,
+    "avgPremium": 0
+  },
+  {
+    "slug": "bismarck-nd",
+    "city": "Bismarck",
+    "state": "North Dakota",
+    "stateAbbr": "ND",
+    "stateSlug": "north-dakota",
+    "population": "74K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Sanford Health",
+      "Blue Cross Blue Shield of ND"
+    ],
+    "maPlansAvailable": 28,
+    "avgPremium": 0
+  },
+  {
+    "slug": "fargo-nd",
+    "city": "Fargo",
+    "state": "North Dakota",
+    "stateAbbr": "ND",
+    "stateSlug": "north-dakota",
+    "population": "125K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Sanford Health",
+      "Blue Cross Blue Shield of ND"
+    ],
+    "maPlansAvailable": 30,
+    "avgPremium": 0
+  },
+  {
+    "slug": "grand-forks-nd",
+    "city": "Grand Forks",
+    "state": "North Dakota",
+    "stateAbbr": "ND",
+    "stateSlug": "north-dakota",
+    "population": "57K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Sanford Health",
+      "Blue Cross Blue Shield of ND"
+    ],
+    "maPlansAvailable": 26,
+    "avgPremium": 0
+  },
+  {
+    "slug": "dayton-oh",
+    "city": "Dayton",
+    "state": "Ohio",
+    "stateAbbr": "OH",
+    "stateSlug": "ohio",
+    "population": "137K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Medical Mutual",
+      "CareSource"
+    ],
+    "maPlansAvailable": 50,
+    "avgPremium": 0
+  },
+  {
+    "slug": "parma-oh",
+    "city": "Parma",
+    "state": "Ohio",
+    "stateAbbr": "OH",
+    "stateSlug": "ohio",
+    "population": "78K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Medical Mutual",
+      "SummaCare"
+    ],
+    "maPlansAvailable": 50,
+    "avgPremium": 0
+  },
+  {
+    "slug": "canton-oh",
+    "city": "Canton",
+    "state": "Ohio",
+    "stateAbbr": "OH",
+    "stateSlug": "ohio",
+    "population": "70K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Medical Mutual",
+      "Aetna"
+    ],
+    "maPlansAvailable": 46,
+    "avgPremium": 0
+  },
+  {
+    "slug": "norman-ok",
+    "city": "Norman",
+    "state": "Oklahoma",
+    "stateAbbr": "OK",
+    "stateSlug": "oklahoma",
+    "population": "128K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of OK",
+      "Aetna"
+    ],
+    "maPlansAvailable": 36,
+    "avgPremium": 0
+  },
+  {
+    "slug": "broken-arrow-ok",
+    "city": "Broken Arrow",
+    "state": "Oklahoma",
+    "stateAbbr": "OK",
+    "stateSlug": "oklahoma",
+    "population": "112K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of OK",
+      "CommunityCare"
+    ],
+    "maPlansAvailable": 35,
+    "avgPremium": 0
+  },
+  {
+    "slug": "salem-or",
+    "city": "Salem",
+    "state": "Oregon",
+    "stateAbbr": "OR",
+    "stateSlug": "oregon",
+    "population": "175K",
+    "tier": "mid",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "Humana",
+      "Regence Blue Cross",
+      "PacificSource"
+    ],
+    "maPlansAvailable": 40,
+    "avgPremium": 0
+  },
+  {
+    "slug": "eugene-or",
+    "city": "Eugene",
+    "state": "Oregon",
+    "stateAbbr": "OR",
+    "stateSlug": "oregon",
+    "population": "176K",
+    "tier": "mid",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "Humana",
+      "PacificSource",
+      "Providence"
+    ],
+    "maPlansAvailable": 38,
+    "avgPremium": 0
+  },
+  {
+    "slug": "gresham-or",
+    "city": "Gresham",
+    "state": "Oregon",
+    "stateAbbr": "OR",
+    "stateSlug": "oregon",
+    "population": "113K",
+    "tier": "mid",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "Humana",
+      "Regence Blue Cross",
+      "Providence"
+    ],
+    "maPlansAvailable": 40,
+    "avgPremium": 0
+  },
+  {
+    "slug": "harrisburg-pa",
+    "city": "Harrisburg",
+    "state": "Pennsylvania",
+    "stateAbbr": "PA",
+    "stateSlug": "pennsylvania",
+    "population": "50K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "UPMC",
+      "Highmark Blue Cross",
+      "Aetna"
+    ],
+    "maPlansAvailable": 58,
+    "avgPremium": 0
+  },
+  {
+    "slug": "allentown-pa",
+    "city": "Allentown",
+    "state": "Pennsylvania",
+    "stateAbbr": "PA",
+    "stateSlug": "pennsylvania",
+    "population": "125K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Highmark Blue Cross",
+      "Capital BlueCross"
+    ],
+    "maPlansAvailable": 60,
+    "avgPremium": 0
+  },
+  {
+    "slug": "erie-pa",
+    "city": "Erie",
+    "state": "Pennsylvania",
+    "stateAbbr": "PA",
+    "stateSlug": "pennsylvania",
+    "population": "94K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "UPMC",
+      "Highmark Blue Cross",
+      "Aetna"
+    ],
+    "maPlansAvailable": 55,
+    "avgPremium": 0
+  },
+  {
+    "slug": "scranton-pa",
+    "city": "Scranton",
+    "state": "Pennsylvania",
+    "stateAbbr": "PA",
+    "stateSlug": "pennsylvania",
+    "population": "77K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Highmark Blue Cross",
+      "Geisinger"
+    ],
+    "maPlansAvailable": 55,
+    "avgPremium": 0
+  },
+  {
+    "slug": "providence-ri",
+    "city": "Providence",
+    "state": "Rhode Island",
+    "stateAbbr": "RI",
+    "stateSlug": "rhode-island",
+    "population": "190K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Tufts Health Plan",
+      "Blue Cross Blue Shield of RI"
+    ],
+    "maPlansAvailable": 45,
+    "avgPremium": 0
+  },
+  {
+    "slug": "cranston-ri",
+    "city": "Cranston",
+    "state": "Rhode Island",
+    "stateAbbr": "RI",
+    "stateSlug": "rhode-island",
+    "population": "82K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Tufts Health Plan",
+      "Blue Cross Blue Shield of RI"
+    ],
+    "maPlansAvailable": 42,
+    "avgPremium": 0
+  },
+  {
+    "slug": "columbia-sc",
+    "city": "Columbia",
+    "state": "South Carolina",
+    "stateAbbr": "SC",
+    "stateSlug": "south-carolina",
+    "population": "136K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of SC",
+      "WellCare"
+    ],
+    "maPlansAvailable": 48,
+    "avgPremium": 0
+  },
+  {
+    "slug": "charleston-sc",
+    "city": "Charleston",
+    "state": "South Carolina",
+    "stateAbbr": "SC",
+    "stateSlug": "south-carolina",
+    "population": "150K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of SC",
+      "Molina"
+    ],
+    "maPlansAvailable": 48,
+    "avgPremium": 0
+  },
+  {
+    "slug": "north-charleston-sc",
+    "city": "North Charleston",
+    "state": "South Carolina",
+    "stateAbbr": "SC",
+    "stateSlug": "south-carolina",
+    "population": "115K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of SC"
+    ],
+    "maPlansAvailable": 46,
+    "avgPremium": 0
+  },
+  {
+    "slug": "rock-hill-sc",
+    "city": "Rock Hill",
+    "state": "South Carolina",
+    "stateAbbr": "SC",
+    "stateSlug": "south-carolina",
+    "population": "75K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of SC",
+      "WellCare"
+    ],
+    "maPlansAvailable": 44,
+    "avgPremium": 0
+  },
+  {
+    "slug": "greenville-sc",
+    "city": "Greenville",
+    "state": "South Carolina",
+    "stateAbbr": "SC",
+    "stateSlug": "south-carolina",
+    "population": "70K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of SC"
+    ],
+    "maPlansAvailable": 46,
+    "avgPremium": 0
+  },
+  {
+    "slug": "pierre-sd",
+    "city": "Pierre",
+    "state": "South Dakota",
+    "stateAbbr": "SD",
+    "stateSlug": "south-dakota",
+    "population": "14K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Sanford Health",
+      "Wellmark BCBS of SD"
+    ],
+    "maPlansAvailable": 25,
+    "avgPremium": 0
+  },
+  {
+    "slug": "sioux-falls-sd",
+    "city": "Sioux Falls",
+    "state": "South Dakota",
+    "stateAbbr": "SD",
+    "stateSlug": "south-dakota",
+    "population": "192K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Sanford Health",
+      "Wellmark BCBS of SD"
+    ],
+    "maPlansAvailable": 30,
+    "avgPremium": 0
+  },
+  {
+    "slug": "rapid-city-sd",
+    "city": "Rapid City",
+    "state": "South Dakota",
+    "stateAbbr": "SD",
+    "stateSlug": "south-dakota",
+    "population": "74K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Sanford Health",
+      "Wellmark BCBS of SD"
+    ],
+    "maPlansAvailable": 26,
+    "avgPremium": 0
+  },
+  {
+    "slug": "chattanooga-tn",
+    "city": "Chattanooga",
+    "state": "Tennessee",
+    "stateAbbr": "TN",
+    "stateSlug": "tennessee",
+    "population": "181K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Cigna",
+      "Blue Cross Blue Shield of TN"
+    ],
+    "maPlansAvailable": 44,
+    "avgPremium": 0
+  },
+  {
+    "slug": "clarksville-tn",
+    "city": "Clarksville",
+    "state": "Tennessee",
+    "stateAbbr": "TN",
+    "stateSlug": "tennessee",
+    "population": "166K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Cigna",
+      "Blue Cross Blue Shield of TN",
+      "WellCare"
+    ],
+    "maPlansAvailable": 40,
+    "avgPremium": 0
+  },
+  {
+    "slug": "murfreesboro-tn",
+    "city": "Murfreesboro",
+    "state": "Tennessee",
+    "stateAbbr": "TN",
+    "stateSlug": "tennessee",
+    "population": "152K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Cigna",
+      "Blue Cross Blue Shield of TN"
+    ],
+    "maPlansAvailable": 44,
+    "avgPremium": 0
+  },
+  {
+    "slug": "arlington-tx",
+    "city": "Arlington",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "stateSlug": "texas",
+    "population": "395K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Cigna",
+      "Blue Cross Blue Shield of TX"
+    ],
+    "maPlansAvailable": 70,
+    "avgPremium": 0
+  },
+  {
+    "slug": "amarillo-tx",
+    "city": "Amarillo",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "stateSlug": "texas",
+    "population": "200K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "WellCare",
+      "Blue Cross Blue Shield of TX"
+    ],
+    "maPlansAvailable": 38,
+    "avgPremium": 0
+  },
+  {
+    "slug": "mcallen-tx",
+    "city": "McAllen",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "stateSlug": "texas",
+    "population": "143K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "WellCare",
+      "Molina"
+    ],
+    "maPlansAvailable": 42,
+    "avgPremium": 0
+  },
+  {
+    "slug": "killeen-tx",
+    "city": "Killeen",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "stateSlug": "texas",
+    "population": "153K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "WellCare",
+      "Scott & White Health Plan"
+    ],
+    "maPlansAvailable": 40,
+    "avgPremium": 0
+  },
+  {
+    "slug": "salt-lake-city-ut",
+    "city": "Salt Lake City",
+    "state": "Utah",
+    "stateAbbr": "UT",
+    "stateSlug": "utah",
+    "population": "200K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "SelectHealth",
+      "Molina"
+    ],
+    "maPlansAvailable": 40,
+    "avgPremium": 0
+  },
+  {
+    "slug": "west-valley-city-ut",
+    "city": "West Valley City",
+    "state": "Utah",
+    "stateAbbr": "UT",
+    "stateSlug": "utah",
+    "population": "140K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "SelectHealth",
+      "Molina"
+    ],
+    "maPlansAvailable": 38,
+    "avgPremium": 0
+  },
+  {
+    "slug": "provo-ut",
+    "city": "Provo",
+    "state": "Utah",
+    "stateAbbr": "UT",
+    "stateSlug": "utah",
+    "population": "116K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "SelectHealth",
+      "Aetna"
+    ],
+    "maPlansAvailable": 36,
+    "avgPremium": 0
+  },
+  {
+    "slug": "west-jordan-ut",
+    "city": "West Jordan",
+    "state": "Utah",
+    "stateAbbr": "UT",
+    "stateSlug": "utah",
+    "population": "116K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "SelectHealth",
+      "Molina"
+    ],
+    "maPlansAvailable": 36,
+    "avgPremium": 0
+  },
+  {
+    "slug": "orem-ut",
+    "city": "Orem",
+    "state": "Utah",
+    "stateAbbr": "UT",
+    "stateSlug": "utah",
+    "population": "98K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "SelectHealth",
+      "Aetna"
+    ],
+    "maPlansAvailable": 35,
+    "avgPremium": 0
+  },
+  {
+    "slug": "burlington-vt",
+    "city": "Burlington",
+    "state": "Vermont",
+    "stateAbbr": "VT",
+    "stateSlug": "vermont",
+    "population": "45K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of VT"
+    ],
+    "maPlansAvailable": 26,
+    "avgPremium": 0
+  },
+  {
+    "slug": "montpelier-vt",
+    "city": "Montpelier",
+    "state": "Vermont",
+    "stateAbbr": "VT",
+    "stateSlug": "vermont",
+    "population": "8K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Blue Cross Blue Shield of VT",
+      "Humana"
+    ],
+    "maPlansAvailable": 25,
+    "avgPremium": 0
+  },
+  {
+    "slug": "arlington-va",
+    "city": "Arlington",
+    "state": "Virginia",
+    "stateAbbr": "VA",
+    "stateSlug": "virginia",
+    "population": "238K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Anthem HealthKeepers",
+      "Kaiser Permanente"
+    ],
+    "maPlansAvailable": 50,
+    "avgPremium": 0
+  },
+  {
+    "slug": "newport-news-va",
+    "city": "Newport News",
+    "state": "Virginia",
+    "stateAbbr": "VA",
+    "stateSlug": "virginia",
+    "population": "185K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Anthem HealthKeepers",
+      "Optima Health"
+    ],
+    "maPlansAvailable": 46,
+    "avgPremium": 0
+  },
+  {
+    "slug": "alexandria-va",
+    "city": "Alexandria",
+    "state": "Virginia",
+    "stateAbbr": "VA",
+    "stateSlug": "virginia",
+    "population": "160K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Anthem HealthKeepers",
+      "Kaiser Permanente"
+    ],
+    "maPlansAvailable": 50,
+    "avgPremium": 0
+  },
+  {
+    "slug": "tacoma-wa",
+    "city": "Tacoma",
+    "state": "Washington",
+    "stateAbbr": "WA",
+    "stateSlug": "washington",
+    "population": "219K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Kaiser Permanente",
+      "Humana",
+      "Premera Blue Cross",
+      "Regence"
+    ],
+    "maPlansAvailable": 44,
+    "avgPremium": 0
+  },
+  {
+    "slug": "olympia-wa",
+    "city": "Olympia",
+    "state": "Washington",
+    "stateAbbr": "WA",
+    "stateSlug": "washington",
+    "population": "55K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Kaiser Permanente",
+      "Humana",
+      "Premera Blue Cross",
+      "Regence"
+    ],
+    "maPlansAvailable": 38,
+    "avgPremium": 0
+  },
+  {
+    "slug": "bellevue-wa",
+    "city": "Bellevue",
+    "state": "Washington",
+    "stateAbbr": "WA",
+    "stateSlug": "washington",
+    "population": "148K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Kaiser Permanente",
+      "Humana",
+      "Premera Blue Cross",
+      "Regence"
+    ],
+    "maPlansAvailable": 46,
+    "avgPremium": 0
+  },
+  {
+    "slug": "kent-wa",
+    "city": "Kent",
+    "state": "Washington",
+    "stateAbbr": "WA",
+    "stateSlug": "washington",
+    "population": "136K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Kaiser Permanente",
+      "Humana",
+      "Premera Blue Cross",
+      "Molina"
+    ],
+    "maPlansAvailable": 42,
+    "avgPremium": 0
+  },
+  {
+    "slug": "charleston-wv",
+    "city": "Charleston",
+    "state": "West Virginia",
+    "stateAbbr": "WV",
+    "stateSlug": "west-virginia",
+    "population": "48K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Highmark Blue Cross of WV",
+      "WellCare"
+    ],
+    "maPlansAvailable": 32,
+    "avgPremium": 0
+  },
+  {
+    "slug": "huntington-wv",
+    "city": "Huntington",
+    "state": "West Virginia",
+    "stateAbbr": "WV",
+    "stateSlug": "west-virginia",
+    "population": "47K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Highmark Blue Cross of WV"
+    ],
+    "maPlansAvailable": 30,
+    "avgPremium": 0
+  },
+  {
+    "slug": "morgantown-wv",
+    "city": "Morgantown",
+    "state": "West Virginia",
+    "stateAbbr": "WV",
+    "stateSlug": "west-virginia",
+    "population": "30K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Highmark Blue Cross of WV",
+      "Aetna"
+    ],
+    "maPlansAvailable": 28,
+    "avgPremium": 0
+  },
+  {
+    "slug": "green-bay-wi",
+    "city": "Green Bay",
+    "state": "Wisconsin",
+    "stateAbbr": "WI",
+    "stateSlug": "wisconsin",
+    "population": "107K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "WPS Health Solutions",
+      "Network Health",
+      "Anthem Blue Cross"
+    ],
+    "maPlansAvailable": 38,
+    "avgPremium": 0
+  },
+  {
+    "slug": "kenosha-wi",
+    "city": "Kenosha",
+    "state": "Wisconsin",
+    "stateAbbr": "WI",
+    "stateSlug": "wisconsin",
+    "population": "99K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "WPS Health Solutions",
+      "Aetna"
+    ],
+    "maPlansAvailable": 36,
+    "avgPremium": 0
+  },
+  {
+    "slug": "racine-wi",
+    "city": "Racine",
+    "state": "Wisconsin",
+    "stateAbbr": "WI",
+    "stateSlug": "wisconsin",
+    "population": "77K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "WPS Health Solutions",
+      "Aetna"
+    ],
+    "maPlansAvailable": 35,
+    "avgPremium": 0
+  },
+  {
+    "slug": "appleton-wi",
+    "city": "Appleton",
+    "state": "Wisconsin",
+    "stateAbbr": "WI",
+    "stateSlug": "wisconsin",
+    "population": "75K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Network Health",
+      "WPS Health Solutions"
+    ],
+    "maPlansAvailable": 36,
+    "avgPremium": 0
+  },
+  {
+    "slug": "cheyenne-wy",
+    "city": "Cheyenne",
+    "state": "Wyoming",
+    "stateAbbr": "WY",
+    "stateSlug": "wyoming",
+    "population": "65K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Blue Cross Blue Shield of WY"
+    ],
+    "maPlansAvailable": 27,
+    "avgPremium": 0
+  },
+  {
+    "slug": "casper-wy",
+    "city": "Casper",
+    "state": "Wyoming",
+    "stateAbbr": "WY",
+    "stateSlug": "wyoming",
+    "population": "57K",
+    "tier": "small",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Cross Blue Shield of WY",
+      "Aetna"
+    ],
+    "maPlansAvailable": 26,
+    "avgPremium": 0
+  },
+  {
+    "slug": "washington-dc",
+    "city": "Washington",
+    "state": "District of Columbia",
+    "stateAbbr": "DC",
+    "stateSlug": "district-of-columbia",
+    "population": "689K",
+    "tier": "large",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "CareFirst BlueCross BlueShield",
+      "Kaiser Permanente"
+    ],
+    "maPlansAvailable": 55,
+    "avgPremium": 0
+  },
+  {
+    "slug": "santa-barbara-ca",
+    "city": "Santa Barbara",
+    "state": "California",
+    "stateAbbr": "CA",
+    "stateSlug": "california",
+    "population": "90K",
+    "tier": "small",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "Humana",
+      "Blue Shield of CA",
+      "SCAN Health"
+    ],
+    "maPlansAvailable": 58,
+    "avgPremium": 0
+  },
+  {
+    "slug": "oxnard-ca",
+    "city": "Oxnard",
+    "state": "California",
+    "stateAbbr": "CA",
+    "stateSlug": "california",
+    "population": "206K",
+    "tier": "mid",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "SCAN Health",
+      "Humana",
+      "Molina"
+    ],
+    "maPlansAvailable": 72,
+    "avgPremium": 0
+  },
+  {
+    "slug": "modesto-ca",
+    "city": "Modesto",
+    "state": "California",
+    "stateAbbr": "CA",
+    "stateSlug": "california",
+    "population": "218K",
+    "tier": "mid",
+    "topCarriers": [
+      "Kaiser Permanente",
+      "UnitedHealthcare",
+      "Humana",
+      "Anthem Blue Cross",
+      "Molina"
+    ],
+    "maPlansAvailable": 50,
+    "avgPremium": 0
+  },
+  {
+    "slug": "spokane-valley-wa",
+    "city": "Spokane Valley",
+    "state": "Washington",
+    "stateAbbr": "WA",
+    "stateSlug": "washington",
+    "population": "102K",
+    "tier": "mid",
+    "topCarriers": [
+      "UnitedHealthcare",
+      "Humana",
+      "Premera Blue Cross",
+      "Regence",
+      "Molina"
+    ],
+    "maPlansAvailable": 40,
+    "avgPremium": 0
+  },
+  {
+    "slug": "fort-myers-fl",
+    "city": "Fort Myers",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "stateSlug": "florida",
+    "population": "86K",
+    "tier": "small",
+    "topCarriers": [
+      "Humana",
+      "UnitedHealthcare",
+      "Aetna",
+      "WellCare",
+      "Devoted Health",
+      "Florida Blue"
+    ],
+    "maPlansAvailable": 70,
+    "avgPremium": 0
+  },
+  {
+    "slug": "gainesville-fl",
+    "city": "Gainesville",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "stateSlug": "florida",
+    "population": "133K",
+    "tier": "mid",
+    "topCarriers": [
+      "Humana",
+      "UnitedHealthcare",
+      "Aetna",
+      "WellCare",
+      "Florida Blue"
+    ],
+    "maPlansAvailable": 55,
+    "avgPremium": 0
+  },
+  {
+    "slug": "clearwater-fl",
+    "city": "Clearwater",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "stateSlug": "florida",
+    "population": "117K",
+    "tier": "mid",
+    "topCarriers": [
+      "Humana",
+      "UnitedHealthcare",
+      "Aetna",
+      "WellCare",
+      "Devoted Health",
+      "Florida Blue"
+    ],
+    "maPlansAvailable": 70,
+    "avgPremium": 0
+  }
 ]
