@@ -9,6 +9,7 @@ const states = JSON.parse(readFileSync(join(rootDir, 'data/states.json'), 'utf-8
 const cities = JSON.parse(readFileSync(join(rootDir, 'data/cities.json'), 'utf-8'));
 const companies = JSON.parse(readFileSync(join(rootDir, 'data/insurance-companies.json'), 'utf-8'));
 const guides = JSON.parse(readFileSync(join(rootDir, 'data/guides.json'), 'utf-8'));
+const carrierReviews = JSON.parse(readFileSync(join(rootDir, 'data/carrier-reviews.json'), 'utf-8'));
 
 const baseUrl = 'https://insurerocket.com';
 const today = new Date().toISOString().split('T')[0];
@@ -46,6 +47,11 @@ for (const city of cities) {
 // Guides
 for (const guide of guides) {
   urls.push({ loc: `/guides/${guide.slug}`, priority: '0.7', changefreq: 'monthly' });
+}
+
+// Carrier reviews
+for (const review of carrierReviews) {
+  urls.push({ loc: `/reviews/${review.slug}`, priority: '0.8', changefreq: 'monthly' });
 }
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
