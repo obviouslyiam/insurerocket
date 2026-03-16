@@ -162,9 +162,22 @@ function estimateReadingTime(sections: { content: string }[], faqs: { answer: st
   return Math.max(3, Math.round(totalWords / 200));
 }
 
-// Keyword extracted from slug for image paths
+// Map slugs to image filenames
+const SLUG_TO_IMAGE: Record<string, string> = {
+  'medicare-advantage-complete-guide': 'medicare-advantage',
+  'medigap-complete-guide': 'medigap',
+  'health-insurance-complete-guide': 'health-insurance',
+  'part-d-complete-guide': 'part-d',
+  'medicare-enrollment-complete-guide': 'enrollment',
+  'medicare-costs-complete-guide': 'medicare-costs',
+  'life-insurance-complete-guide': 'life-insurance',
+  'auto-insurance-complete-guide': 'auto-insurance',
+  'homeowners-insurance-complete-guide': 'home-insurance',
+  'dental-insurance-complete-guide': 'dental-vision',
+  'medicare-veterans-complete-guide': 'medicare-veterans',
+};
 function slugToKeyword(slug: string): string {
-  return slug.replace(/-2026.*$/, '').replace(/-guide$/, '').replace(/-complete$/, '');
+  return SLUG_TO_IMAGE[slug] || slug.replace(/-2026.*$/, '').replace(/-guide$/, '').replace(/-complete$/, '');
 }
 
 interface GuideData {
