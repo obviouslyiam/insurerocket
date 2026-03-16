@@ -151,6 +151,30 @@ function inferCategory(slug: string, explicitCategory?: string): string {
   return 'Insurance Guide';
 }
 
+// Extract a key numeric stat from section content (first number with context)
+function extractStat(content: string): { number: string; label: string } | null {
+  // Match patterns like "$2,000", "65%", "30 days", "12 months", "3 plans", "10 million"
+  const match = content.match(/(\$[\d,]+(?:\.\d+)?(?:\s*(?:billion|million|thousand))?|\d[\d,]*(?:\.\d+)?(?:\s*(?:billion|million|thousand|%|years?|months?|days?|plans?|carriers?|states?|people|beneficiaries))?)/i);
+  if (!match) return null;
+  const numStr = match[1];
+  // Get surrounding context (up to 6 words after the number)
+  const afterIdx = content.indexOf(numStr) + numStr.length;
+  const after = content.slice(afterIdx, afterIdx + 60).split(/[.,!?;]/)[0].trim().replace(/\s+/g, ' ');
+  // Get a short label: the matched text + a few words
+  const label = after.length > 3 ? after.slice(0, 40) : 'key figure for this topic';
+  return { number: numStr.trim(), label };
+}
+
+// Extract key point: first full sentence (or first 120 chars)
+function extractKeyPoint(content: string): string {
+  const firstPara = content.split('\n\n')[0].replace(/^- /, '').trim();
+  const sentenceEnd = firstPara.search(/[.!?]/);
+  if (sentenceEnd > 20 && sentenceEnd < 200) {
+    return firstPara.slice(0, sentenceEnd + 1);
+  }
+  return firstPara.slice(0, 120).trim() + (firstPara.length > 120 ? '...' : '');
+}
+
 // Estimate reading time from all content
 function estimateReadingTime(sections: { content: string }[], faqs: { answer: string }[]): number {
   const totalWords = [
@@ -426,10 +450,17 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             </details>
 
             {/* Content Sections */}
-            {guide.sections.map((section, i) => (
+            {guide.sections.map((section, i) => {
+              const showImage = i > 0 && i % 2 === 0;
+              // Sections without an image: alternate Quick Stat (odd index) and Key Point (every 4th+1)
+              const showQuickStat = !showImage && i > 0 && i % 4 === 1;
+              const showKeyPoint = !showImage && i > 0 && i % 4 === 3;
+              const stat = showQuickStat ? extractStat(section.content) : null;
+              const keyPoint = showKeyPoint ? extractKeyPoint(section.content) : null;
+              return (
               <div key={i}>
-                {/* In-article image placeholder every 3rd section (after section 0) */}
-                {i > 0 && i % 3 === 0 && (
+                {/* In-article image every 2nd section (after section 0) */}
+                {showImage && (
                   <div
                     className="w-full rounded-xl mb-6 overflow-hidden flex items-center justify-center"
                     style={{
@@ -446,6 +477,49 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                     >
                       {section.heading}
                     </div>
+                  </div>
+                )}
+
+                {/* Quick Stat card — dark bg, teal accent, large number */}
+                {showQuickStat && stat && (
+                  <div
+                    className="rounded-xl mb-6 px-6 py-5 flex items-center gap-5"
+                    style={{ background: '#0f1f38', border: '1px solid #0d9488' }}
+                  >
+                    <div className="flex-shrink-0 text-center">
+                      <div
+                        className="text-3xl sm:text-4xl font-extrabold leading-none"
+                        style={{ color: '#2dd4bf' }}
+                      >
+                        {stat.number}
+                      </div>
+                    </div>
+                    <div>
+                      <div className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: '#0d9488' }}>
+                        Quick Stat
+                      </div>
+                      <div className="text-sm leading-snug" style={{ color: 'rgba(255,255,255,0.8)' }}>
+                        {stat.label}
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Key Point callout — bordered left accent */}
+                {showKeyPoint && keyPoint && (
+                  <div
+                    className="rounded-r-xl mb-6 px-5 py-4"
+                    style={{
+                      borderLeft: '4px solid #0d9488',
+                      background: 'linear-gradient(90deg, #f0fdfa 0%, #f9fafb 100%)',
+                    }}
+                  >
+                    <div className="text-xs font-bold uppercase tracking-widest mb-1.5" style={{ color: '#0f766e' }}>
+                      Key Point
+                    </div>
+                    <p className="text-sm font-medium leading-relaxed" style={{ color: '#134e4a' }}>
+                      {keyPoint}
+                    </p>
                   </div>
                 )}
 
@@ -520,7 +594,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                   </div>
                 )}
               </div>
-            ))}
+              );
+            })}
 
             {/* FAQ Accordion */}
             <section id="faq" className="mt-4 mb-12">
@@ -644,6 +719,64 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                   compares high-yield savings accounts and CDs — useful for building a healthcare cost reserve alongside your Medicare coverage.
                 </div>
               )}
+            </section>
+
+            {/* Share This Guide */}
+            <section
+              className="rounded-xl p-6 mb-10"
+              style={{ background: '#0f1f38', border: '1px solid #1e3a5f' }}
+            >
+              <div className="flex items-center gap-2 mb-4">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="18" cy="5" r="3" /><circle cx="6" cy="12" r="3" /><circle cx="18" cy="19" r="3" />
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" /><line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                </svg>
+                <h2 className="text-sm font-bold uppercase tracking-widest" style={{ color: '#2dd4bf' }}>Share This Guide</h2>
+              </div>
+              <p className="text-xs mb-4" style={{ color: 'rgba(255,255,255,0.55)' }}>
+                Help others find the right coverage — share this guide with friends or family.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                {/* Twitter / X */}
+                <a
+                  href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(guide.h1)}&url=${encodeURIComponent(`https://www.insurerocket.com/guides/${guide.slug}/`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs font-semibold transition-all hover:opacity-90"
+                  style={{ background: '#000000', color: '#ffffff', border: '1px solid #333' }}
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z" />
+                  </svg>
+                  Post on X
+                </a>
+                {/* Facebook */}
+                <a
+                  href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://www.insurerocket.com/guides/${guide.slug}/`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs font-semibold transition-all hover:opacity-90"
+                  style={{ background: '#1877f2', color: '#ffffff', border: '1px solid #1565d8' }}
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                  </svg>
+                  Share on Facebook
+                </a>
+                {/* LinkedIn */}
+                <a
+                  href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://www.insurerocket.com/guides/${guide.slug}/`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs font-semibold transition-all hover:opacity-90"
+                  style={{ background: '#0a66c2', color: '#ffffff', border: '1px solid #0853a0' }}
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                  Share on LinkedIn
+                </a>
+              </div>
             </section>
 
             {/* Related Guides */}
