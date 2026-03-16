@@ -232,56 +232,38 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     <>
       <FAQSchema faqs={guide.faq} />
 
-      {/* Hero Section */}
-      <div
-        className="w-full relative overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%)' }}
-      >
-        {/* Subtle grid overlay */}
-        <div
-          className="absolute inset-0 opacity-5"
-          style={{
-            backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)',
-            backgroundSize: '40px 40px',
-          }}
+      {/* Hero Image — full width, image has title baked in */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={`/images/heroes/hero-${keyword}.png`}
+          alt={guide.h1}
+          className="w-full rounded-2xl mb-6 object-cover"
+          style={{ maxHeight: '400px' }}
         />
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
-          {/* Breadcrumbs in hero */}
-          <nav aria-label="Breadcrumb" className="text-xs mb-6" style={{ color: 'rgba(255,255,255,0.55)' }}>
-            <ol className="flex flex-wrap items-center gap-1">
-              <li>
-                <Link href="/" className="hover:text-white transition-colors">Home</Link>
-              </li>
-              <li className="flex items-center gap-1">
-                <span className="mx-1">/</span>
-                <Link href="/insurance-guides/" className="hover:text-white transition-colors">Guides</Link>
-              </li>
-              <li className="flex items-center gap-1">
-                <span className="mx-1">/</span>
-                <span style={{ color: 'rgba(255,255,255,0.8)' }}>{guide.h1}</span>
-              </li>
-            </ol>
-          </nav>
 
-          {/* Category badge */}
-          <div className="mb-4">
-            <span
-              className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider"
-              style={{ background: '#0d9488', color: '#fff' }}
-            >
-              {category}
-            </span>
-          </div>
+        {/* Breadcrumbs */}
+        <Breadcrumbs items={[{ label: 'Guides', href: '/insurance-guides/' }, { label: guide.h1 }]} />
 
-          {/* Title */}
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 leading-tight" style={{ color: '#ffffff' }}>
-            {guide.h1}
-          </h1>
+        {/* Category badge */}
+        <div className="mb-4 mt-4">
+          <span
+            className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider"
+            style={{ background: '#0d9488', color: '#fff' }}
+          >
+            {category}
+          </span>
+        </div>
 
-          {/* Meta description as subtitle */}
-          <p className="text-base sm:text-lg max-w-3xl mb-6 leading-relaxed" style={{ color: 'rgba(255,255,255,0.75)' }}>
-            {guide.metaDescription}
-          </p>
+        {/* Title */}
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-foreground">
+          {guide.h1}
+        </h1>
+
+        {/* Meta description */}
+        <p className="text-base sm:text-lg max-w-3xl mb-6 leading-relaxed text-muted">
+          {guide.metaDescription}
+        </p>
 
           {/* Meta badges */}
           <div className="flex flex-wrap items-center gap-3 text-xs" style={{ color: 'rgba(255,255,255,0.6)' }}>
@@ -313,7 +295,6 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
               {guide.sections.length} sections
             </span>
           </div>
-        </div>
       </div>
 
       {/* Featured Carriers Bar */}
@@ -334,7 +315,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src={`https://logo.clearbit.com/${domain}`}
+                      src={`https://www.google.com/s2/favicons?domain=${domain}&sz=64`}
                       alt={`${carrier} logo`}
                       width={28}
                       height={28}
