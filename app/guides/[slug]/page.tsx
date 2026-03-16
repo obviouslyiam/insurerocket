@@ -256,15 +256,23 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     <>
       <FAQSchema faqs={guide.faq} />
 
-      {/* Hero Image — full width, image has title baked in */}
+      {/* Hero — image for pillars, gradient for cluster articles */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={`/images/heroes/hero-${keyword}.png`}
-          alt={guide.h1}
-          className="w-full rounded-2xl mb-6 object-cover"
-          style={{ maxHeight: '400px' }}
-        />
+        {SLUG_TO_IMAGE[slug] ? (
+          /* eslint-disable-next-line @next/next/no-img-element */
+          <img
+            src={`/images/heroes/hero-${keyword}.png`}
+            alt={guide.h1}
+            className="w-full rounded-2xl mb-6 object-cover"
+            style={{ maxHeight: '400px' }}
+          />
+        ) : (
+          <div className="w-full rounded-2xl mb-6 overflow-hidden" style={{ height: '200px', background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%)' }}>
+            <div className="h-full flex items-center justify-center px-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white/80 text-center">{guide.h1}</h2>
+            </div>
+          </div>
+        )}
 
         {/* Breadcrumbs */}
         <Breadcrumbs items={[{ label: 'Guides', href: '/insurance-guides/' }, { label: guide.h1 }]} />
