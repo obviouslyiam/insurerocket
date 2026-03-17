@@ -39,10 +39,11 @@ for (const company of companies) {
   urls.push({ loc: `/insurance-companies/${company.slug}`, priority: '0.8', changefreq: 'monthly' });
 }
 
-// Medicare plans by city
-for (const city of cities) {
-  urls.push({ loc: `/medicare-plans/${city.slug}`, priority: '0.7', changefreq: 'monthly' });
-}
+// Medicare plans by city — REMOVED from sitemap (pages are 404 on production)
+// Re-add when city pages are built and deployed
+// for (const city of cities) {
+//   urls.push({ loc: `/medicare-plans/${city.slug}`, priority: '0.7', changefreq: 'monthly' });
+// }
 
 // Guides
 for (const guide of guides) {
